@@ -18,10 +18,74 @@
     background: - - - ;
     color: - - - ;
     /* TEXT */
-    font-family: - - - ;
+    font-family: 'Roboto';
     font-size: - - - ;
     line-height: - - - ;
     text-align: - - - ;
     /* OTHER */
     cursor: - - - ;
 }
+
+/* TEXT FORMAT */
+/* HEADERS */
+h1 {
+    /* POSITIONING */
+    position: absolute;
+    left: 305px;
+    top: 713px;
+    /* DISPLAY & BOX MODEL */
+    width: 829px;
+    height: 93px;
+    /* COLOR */
+    color: #FFFFFF;
+    /* TEXT */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 79px;
+    line-height: 93px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+  } 
+
+h2 {
+     /* POSITIONING */
+     position: absolute;
+     left: 557px;
+     top: 653px;
+     /* DISPLAY & BOX MODEL */
+     width: 325px;
+     height: 60px;
+     /* COLOR */
+     color: #FFFFFF;
+     /* TEXT */
+     font-family: 'Roboto';
+     font-style: normal;
+     font-size: 51px;
+     line-height: 60px;
+     font-weight: 800;
+     text-align: center;
+     text-transform: uppercase;
+}
+
+h3 {
+    /* POSITIONING */
+     position: absolute;
+     left: 390px;
+     top: 2343px;
+     /* DISPLAY & BOX MODEL */
+     width: 659px;
+     height: 106px;
+     /* COLOR */
+     color: #FFFFFF;
+     /* TEXT */
+     font-family: 'Roboto';
+     font-style: normal;
+     font-size: 45px;
+     line-height: 53px;
+     font-weight: 900;
+     text-align: center;
+     text-transform: uppercase;
+}
+
+/* TEXT */
