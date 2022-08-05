@@ -1,207 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- SEO -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sublight Engines</title>
-    <meta name="description" content="Sublight Engines is the one-stop for your elevator needs. From design to maintenance, we take care of it all.">
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="main.css">    
-</head>
-<body>  
-    <div id="header" class="navbar-toggleable-md sticky header-md clearfix"></div>
-    
-    <header id="topNav">
-        <div class="container">
-            <img src="images\bkg_1 1.png" alt="elevator panel"/>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css" />
+    </head>
 
-            
-            <!-- Mobile Menu Button -->
-            <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
-                <i class="fa fa-bars"></i>
-            </button>
-            <!-- Mobile Menu Button -->
-            
-            <!-- Logo -->
-            <a class="logo float-left scrollTo" href="#top">
-                <img src="images\logosublight.svg" alt="logo" />
-            </a>
-            <!-- Logo -->
-            
-            <!-- TOP NAV -->
-            <div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
-                <nav class="nav-main">
-                    <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+    <body>
+        <header>
+            <img src="images/logosublight.svg" id="logo" alt="logo" />
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <a href="#services"> Our Services </a>
+                    </li>
+                    <li>
+                        <a href="#products"> Our Products </a>
+                    </li>
+                    <li>
+                        <a href="#service_request"> Service Request </a>
+                    </li>
+                    <li>
+                        <a href="#contact_us"> Contact Us </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-                        <li class="active"><!-- OUR SERVICES -->
-                            <a href="#services">
-                                our services
-                            </a>
-                        </li>
-                        <li><!-- OUR PRODUCTS -->
-                            <a href="#products">
-                                our products
-                            </a>
-                        </li>
-                        <li><!-- ABOUT US -->
-                            <a href="#request">
-                                service request
-                            </a>
-                        </li>
-                        <li><!-- CONTACT US -->
-                            <a href="#contact">
-                                contact us
-                            </a>
-                        </li>							
-                    </ul>
-                </nav>
-            </div>
-            <!-- TOP NAV -->
-        </div>
-    </header>
+        <main>
+            <section id="hero">
+                <div id="text">
+                    <h2>OUR MISSION</h2>
+                    <h1>TAKE YOU TO THE TOP</h1>
+                </div>
+                <button>
+                    <img src="images/elevatorbutton.svg" alt="elevator button icon" href="#services" />
+                </button>
+            </section>
 
+            <section id="services">
+                <div id="text">
+                    <h4>one-stop for your elevator needs</h4>
+                    <h4>one step closer to success</h4>
+                </div>
 
+                <div id="images">
+                    <img src="images/design.svg" class="photo" alt="blueberry" />
+                    <img src="images/build.svg" class="photo" alt="celery" />
+                    <img src="images/maintenance.svg" class="photo" alt="strawberry" />
+                </div>
+            </section>
 
+            <section id="product-description">
+                <div id="text">
+                    <h6>2022 SECUREBOARDS SERIES</h6>
+                    <h6>the perfection in security</h6>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate diam placerat a et pulvinar sapien orci mauris platea.
+                        Consectetur non adipiscing duis quis leo integer adipiscing elit. Felis, cursus aenean at egestas mauris. Senectus pharetra
+                        volutpat ligula ac et. Morbi amet dignissim ipsum, in accumsan. Rhoncus in erat consectetur mi consectetur. At faucibus
+                        pellentesque et aliquet mauris. Senectus facilisi at elementum lectus non egestas. In elementum cum suspendisse quam. Congue
+                        sagittis fermentum mauris fermentum ut lectus parturient faucibus id.</h6>
+                </div>
+                <div id="image">
+                    <img src="images/product_description.png" alt="Product Description" />
+                </div>
+            </section>
 
-    <!-- MAIN CONTENT -->
-    <main id="content" role="main">
-        <!-- section1 -->
-        <section id= "section1">
-            <h2>OUR MISSION</h2>
-            <h1> TAKE YOU TO THE TOP</h1>
-            <btn>
-                <img src="images\elevatorbutton.svg" alt="elevator button icon" />
-        </section>
-        <!-- section1 -->
-
-        <!-- OUR SERVICES -->
-        <section id="services">
-            <p>one-stop for your elevator needs</p>
-            <p>one step closer to success</p>
-            <img src="images\design.svg" alt="design icon"/>
-            <p>we design</p>
-            <img src="images\build.svg" alt="building icon"/>
-            <p>we build</p>
-            <img src="images\maintenance.svg" alt="maintenance icon"/>
-            <p>we maintain</p>
-        </section>
-        <!-- OUR SERVICES -->
-
-        <!-- section3 -->
-        <section id="section3">
-            <p>2022 SECUREBOARDS SERIES</p>
-            <p>the perfection in security</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate diam placerat a et pulvinar sapien orci mauris platea. Consectetur non adipiscing duis quis leo integer adipiscing elit. Felis, cursus aenean at egestas mauris. Senectus pharetra volutpat ligula ac et. Morbi amet dignissim ipsum, in accumsan. Rhoncus in erat consectetur mi consectetur. At faucibus pellentesque et aliquet mauris. Senectus facilisi at elementum lectus non egestas. In elementum cum suspendisse quam. Congue sagittis fermentum mauris fermentum ut lectus parturient faucibus id.</p>
-            <img src="images\bkg_2 1.png" alt="Secureboards"/>
-        </section>
-        <!-- section3 -->
-
-        <!-- OUR PRODUCTS -->
-        <section id="products">
-            <p>need more for your fleet of elevators </p>
-            <p>all our products are made
-                with heart and soul</p>
-            <!-- border -->
-            <div class="product-card">
-                <img src="images\bkg_2 2.png" alt="product-card1"/>
-                <p>safety</p>
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
-            </div>
-            <div class="product-card">
-                <img src="images\bkg_2 2 (1).png" alt="product-card2"/>
-                <p>cab</p>
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
-            </div>
-            <div class="product-card">
-                <img src="images\bkg_2 2 (2).png" alt="product-card3"/>
-                <p>door</p>
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
-            </div>
-            <div class="product-card">
-                <img src="images\bkg_2 2 (3).png" alt="product-card4"/>
-                <p>mechanics</p>
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
-            </div>
-            <div class="product-card">
-                <img src="images\bkg_2 2 (4).png" alt="product-card5"/>
-                <p>hoistway/hatch</p>
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
-            </div>
-            <btn>Download our catalog</bt>
-        </section>
-        <!-- OUR PRODUCTS -->
-
-        <!-- CONTACT US -->
-        <section id="request">
-            <p>stay in touch with our customer service</p>
-            <p>feel free to contact us
-                for any questions</p>
-            <!-- Separator -->
-            <form>
-                <fieldset>
-                    <input type="hidden" name="action" value="contact_send" />
-                    <div class="row">
-                        <div class="col-md-4">
-                            <label for="contact:name">Name *</label>
-                            <input required type="text" value="" class="form-control" name="lead[full_name]" id="lead:full_name">Enter your full name</input>
+            <section id="product-line">
+                <div id="text">
+                    <h6>need more for your fleet of elevator</h6>
+                    <h6>all our products are made with heart and soul</h6>
+                </div>
+                <div id="product-cards">
+                    <div id="product-card">
+                        <img src="images/safety.png" alt="product-card safety" id="image" />
+                        <div id="legend">
+                            <h6>safety</h6>
+                            <h6>Lorem ipsum dolor sit amet, consectetur</h6>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <label for="lead:email">email address *</label>
-                            <input required type="email" value="" class="form-control" name="lead[email]" id="lead:email">yourname@company.com</input>
+                    <div id="product-card">
+                        <img src="images/cab.png" alt="product-card cab" id="image" />
+                        <div id="legend">
+                            <h6>cab</h6>
+                            <h6>Lorem ipsum dolor sit amet, consectetur</h6>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <label for="lead:phone">phone number</label>
-                            <input type="text" value="" class="form-control" name="lead[phone]" id="lead:phone">0 (000) 000 -0000</input>
-                        </div>
-                        <div class="col-md-12">
-                            <label for="lead:language">preferred language</label>
-                            <select class="form-control pointer" name="lead[language]">
-                                <option value="">--- Select ---</option>
-                                <option value="English">English / Anglais</option>
-                                <option value="French">French / Français</option>
-                            </select>
+                    <div id="product-card">
+                        <img src="images/door.png" alt="product-card door" id="image" />
+                        <div id="legend">
+                            <h6>door</h6>
+                            <h6>Lorem ipsum dolor sit amet, consectetur</h6>
                         </div>
                     </div>
-                </fieldset>
-                <div class="row">
-                    <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> submit</button>
+                    <div id="product-card">
+                        <img src="images/mechanics.png" alt="product-card mechanics" id="image" />
+                        <div id="legend">
+                            <h6>mechanics</h6>
+                            <h6>Lorem ipsum dolor sit amet, consectetur</h6>
+                        </div>
+                    </div>
+                    <div id="product-card">
+                        <img src="images/hoistway.png" alt="product-card hoistway" id="image" />
+                        <div id="legend">
+                            <h6>hoistway/hatch</h6>
+                            <h6>Lorem ipsum dolor sit amet, consectetur</h6>
+                        </div>
                     </div>
                 </div>
-            </form>    
-        </section>
-        <!-- CONTACT US -->
-    </main>
-        
-    <!-- FOOTER -->
-    <footer>
-        <div>
-            <p>With your trust since 1943.</p>
-            <img src="images\signature.svg" alt="signature logo"/>
-        </div>
-        <section id="contact">
-            <div>
-                <p>UNITED STATES office</p>
-                <p>456 harlem boulevard saratoga springs, ny, usa 1 999 543-4567</p>
-            </div>
-            <div>
-                <p>Canada&#39s office</p>
-                <p>23895 bradshaw boulevard kingston, ont, ca 1 999 543-4567</p>
-            </div>
-            <div>
-                <p>All rights reserved to CodeBoxx Solutions ©, 2022.</p>
-            </div>
-        </section>
-    </footer>
+                <div id="button">
+                    <button type="button"> Download our catalog</button>
+                </div>
+            </section>
 
-
-    <!-- SCRIPTS -->
-    <script src="main.js"></script>
-</body>
+            <section id="request">
+                <div id="text">    
+                    <h6>stay in touch with our customer service</h6>
+                    <h6>feel free to contact us for any questions</h6>
+                </div>
+                    <!-- Separator -->
+                <div id="form">
+                    <form>
+                        <fieldset>
+                            <!-- <input type="hidden" name="action" value="contact_send" /> -->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="contact:name">Name *</label>
+                                    <input required type="text" value="" class="form-control" name="lead[full_name]" id="lead:full_name" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="lead:email">email address *</label>
+                                    <input required type="email" value="" class="form-control" name="lead[email]" id="lead:email" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="lead:phone">phone number</label>
+                                    <input type="text" value="" class="form-control" name="lead[phone]" id="lead:phone" />
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="lead:language">preferred language</label>
+                                    <select class="form-control pointer" name="lead[language]">
+                                        <option value="">--- Select ---</option>
+                                        <option value="English">English / Anglais</option>
+                                        <option value="French">French / Français</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div id="footer">
+                <h6>With your trust since 1943.</h6>
+                <img src="images\signature.svg" alt="signature logo" />
+            </div>
+            <section id="contact">
+                <div id="usa">
+                    <h6>UNITED STATES office</h6>
+                    <h6>456 harlem boulevard saratoga springs, ny, usa 1 999 543-4567</h6>
+                </div>
+                <div id="canada">
+                    <h6>Canada office</h6>
+                    <h6>23895 bradshaw boulevard kingston, ont, ca 1 999 543-4567</h6>
+                </div>
+                <div id="rights">
+                    <h6>All rights reserved to CodeBoxx Solutions ©, 2022.</h6>
+                </div>
+            </section>
+        </footer>
+        <!-- SCRIPTS -->
+        <script src="main.js"></script>
+    </body>
 </html>
