@@ -1,27 +1,214 @@
-/* CSS STRUCTURE TEMPLATE */
-.selector {
-    /* POSITIONING */
-    position: absolute, relative, fixed, etc;
-    z-index: 10;
+body {
+    background-color: brown;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: blue;
+    width: 100%;
+    position: absolute;
     top: 0;
+    left: 0;
     right: 0;
-    /* DISPLAY & BOX MODEL */
-    display: block, flex, etc;
-    overflow: visible, hidden, scroll, etc;
-    box-sizing: border-box, etc;
-    width: - - -;
-    height: - - - ;
-    padding: 10px 10px;
-    border: 0 solid color;
-    margin: - - - ;
-    /* COLOR */
-    background: - - - ;
-    color: - - - ;
-    /* TEXT */
-    font-family: - - - ;
-    font-size: - - - ;
-    line-height: - - - ;
-    text-align: - - - ;
-    /* OTHER */
-    cursor: - - - ;
+    bottom: 0;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.69);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: sticky;
+    top: 24px;
+    padding: 0;
+    z-index: 1;
+}
+
+header img {
+    width: 28.13%;
+}
+
+header nav {
+    /* background-color:deeppink  */
+
+}
+
+header nav ul li {
+    display: inline-flex;
+    background-color:green;
+}
+
+section#hero {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("images/background.png");
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    /* padding: 653 0 63 0; */
+}
+
+section#hero div#text {
+    width: 100%;
+}
+
+section#hero button {
+    padding-bottom: 68px;
+}
+
+section#services {
+    background-color: #383838;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+section#services div#text {
+    padding-top: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+    section#services div#images {
+        flex-direction: column;
+    }
+}
+
+section#services div#images {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+section#services img.photo {
+    height: 250px;
+    width: 250px;
+}
+
+section#product-description {
+    background-color: white;
+    display:flex;
+    align-items: right;
+    text-align: left;
+}
+
+section#product-description div#images {
+    height: 19.9%;
+    top:1751px;
+}
+
+section#product-line {
+    background-color: #FF7630;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section#product-line div#product-cards {
+    background-color: white; 
+    display : flex;
+    justify-content: space-evenly;
+}
+
+section#product-line div#product-card {
+    width: 17.71%
+}
+
+section#product-line div#image {
+    display: flex;
+    justify-content: space-evenly;
+    width: 17.71%;
+    padding-bottom: 0;
+}
+
+section#product-line div#button {
+  background-color: #FF7630;
+  height: 19.08%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section#product-line div#image div#legend {
+    background-color: white;
+    display: flex;
+    height: 103px ;
+}
+
+section#request {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section#request div#text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#request div#form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+section#request fieldset {
+    border: none;
+    display:table-row;
+    width: 100%;
+    padding: 0;
+}
+
+footer div#footer {
+    background-color: #292929;
+    height: 254px;
+    display: flex;
+}
+
+
+
+
+
+
+
+/* FONTS AND TEXT PROPERTY */
+
+{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 79px;
+    line-height: 93px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
