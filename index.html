@@ -12,7 +12,7 @@
                         <a href="#services"> Our Services </a>
                     </li>
                     <li>
-                        <a href="#products"> Our Products </a>
+                        <a href="#product_description"> Our Products </a>
                     </li>
                     <li>
                         <a href="#service_request"> Service Request </a>
@@ -30,25 +30,32 @@
                     <h2>OUR MISSION</h2>
                     <h1>TAKE YOU TO THE TOP</h1>
                 </div>
-                <button>
-                    <img src="images/elevatorbutton.svg" alt="elevator button icon" href="#services" />
-                </button>
+                <img src="images/elevatorbutton.svg" alt="elevator button icon" href="#services"></img>
             </section>
 
             <section id="services">
                 <div id="text">
                     <h4>one-stop for your elevator needs</h4>
-                    <h4>one step closer to success</h4>
+                    <h3>one step closer to success</h3>
                 </div>
 
                 <div id="images">
-                    <img src="images/design.svg" class="photo" alt="blueberry" />
-                    <img src="images/build.svg" class="photo" alt="celery" />
-                    <img src="images/maintenance.svg" class="photo" alt="strawberry" />
+                    <div id="design">
+                        <img src="images/design.svg" class="photo" alt="design" />
+                        <h4>we design</h4>
+                    </div>
+                    <div id="build">
+                        <img src="images/build.svg" class="photo" alt="build" />
+                        <h4>we build</h4>
+                    </div>
+                    <div id="maintenance">
+                        <img src="images/maintenance.svg" class="photo" alt="maintenance" />
+                        <h4>we maintain</h4>
+                    </div>
                 </div>
             </section>
 
-            <section id="product-description">
+            <section id="product_description">
                 <div id="text">
                     <h6>2022 SECUREBOARDS SERIES</h6>
                     <h6>the perfection in security</h6>
@@ -63,42 +70,42 @@
                 </div>
             </section>
 
-            <section id="product-line">
+            <section id="product_line">
                 <div id="text">
                     <h6>need more for your fleet of elevator</h6>
                     <h6>all our products are made with heart and soul</h6>
                 </div>
-                <div id="product-cards">
-                    <div id="product-card">
-                        <img src="images/safety.png" alt="product-card safety" id="image" />
+                <div id="product_cards">
+                    <div id="product_card">
+                        <img src="images/safety.png" alt="product_card safety" id="image" />
                         <div id="legend">
                             <h6>safety</h6>
                             <h6>Lorem ipsum dolor sit amet, consectetur</h6>
                         </div>
                     </div>
-                    <div id="product-card">
-                        <img src="images/cab.png" alt="product-card cab" id="image" />
+                    <div id="product_card">
+                        <img src="images/cab.png" alt="product_card cab" id="image" />
                         <div id="legend">
                             <h6>cab</h6>
                             <h6>Lorem ipsum dolor sit amet, consectetur</h6>
                         </div>
                     </div>
-                    <div id="product-card">
-                        <img src="images/door.png" alt="product-card door" id="image" />
+                    <div id="product_card">
+                        <img src="images/door.png" alt="product_card door" id="image" />
                         <div id="legend">
                             <h6>door</h6>
                             <h6>Lorem ipsum dolor sit amet, consectetur</h6>
                         </div>
                     </div>
-                    <div id="product-card">
-                        <img src="images/mechanics.png" alt="product-card mechanics" id="image" />
+                    <div id="product_card">
+                        <img src="images/mechanics.png" alt="product_card mechanics" id="image" />
                         <div id="legend">
                             <h6>mechanics</h6>
                             <h6>Lorem ipsum dolor sit amet, consectetur</h6>
                         </div>
                     </div>
-                    <div id="product-card">
-                        <img src="images/hoistway.png" alt="product-card hoistway" id="image" />
+                    <div id="product_card">
+                        <img src="images/hoistway.png" alt="product_card hoistway" id="image" />
                         <div id="legend">
                             <h6>hoistway/hatch</h6>
                             <h6>Lorem ipsum dolor sit amet, consectetur</h6>
@@ -110,7 +117,7 @@
                 </div>
             </section>
 
-            <section id="request">
+            <section id="service_request">
                 <div id="text">    
                     <h6>stay in touch with our customer service</h6>
                     <h6>feel free to contact us for any questions</h6>
@@ -120,24 +127,24 @@
                     <form>
                         <fieldset>
                             <!-- <input type="hidden" name="action" value="contact_send" /> -->
-                            <div class="row">
-                                <div class="col-md-4">
+                            <div id="row">
+                                <div id="field">
                                     <label for="contact:name">Name *</label>
                                     <input required type="text" value="" class="form-control" name="lead[full_name]" id="lead:full_name" />
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-4">
+                            <div id="row">
+                                <div id="field">
                                     <label for="lead:email">email address *</label>
                                     <input required type="email" value="" class="form-control" name="lead[email]" id="lead:email" />
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-4">
+                            <div id="row">
+                                <div id="field">
                                     <label for="lead:phone">phone number</label>
                                     <input type="text" value="" class="form-control" name="lead[phone]" id="lead:phone" />
                                 </div>
-                                <div class="col-md-12">
+                                <div id="field">
                                     <label for="lead:language">preferred language</label>
                                     <select class="form-control pointer" name="lead[language]">
                                         <option value="">--- Select ---</option>
@@ -161,7 +168,7 @@
                 <h6>With your trust since 1943.</h6>
                 <img src="images\signature.svg" alt="signature logo" />
             </div>
-            <section id="contact">
+            <section id="contact_us">
                 <div id="usa">
                     <h6>UNITED STATES office</h6>
                     <h6>456 harlem boulevard saratoga springs, ny, usa 1 999 543-4567</h6>
