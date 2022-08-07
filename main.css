@@ -1,5 +1,4 @@
 body {
-    background-color: brown;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -32,11 +31,6 @@ header {
 
 header img {
     width: 28.13%;
-}
-
-header nav {
-    /* background-color:deeppink  */
-
 }
 
 header nav ul li {
@@ -214,7 +208,7 @@ section#service_request fieldset {
     padding: 0;
 }
 
-section#service_request div#row {
+section#service_request fieldset div#row {
     display: flex;
 }
 
@@ -228,8 +222,70 @@ section#service_request div#field label {
 display: flex;
 }
 
+section#service_request div#button {
+    color: #292929;
+    border: 3px solid;
+    border-color: #292929;
+    margin: 47 0 104 0;
+    padding: 14 0 14 0;
+}
 
+section#service_request div#button h6{
+    margin: 0;
+    text-transform: uppercase;
+}
 
+footer div#footer {
+    display: flex;
+    background-color:#292929;
+    padding: 100 0 101 0;
+}
+
+section#contact_us {
+    color:#292929;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section#contact_us div#country h6 {
+    margin: 80 0 7 0;
+    color: #FF7630;
+}
+
+section#contact_us div#usa {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section#contact_us div#usa div#address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section#contact_us div#canada {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+section#contact_us div#canada div#address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+section#contact_us div#address p {
+    margin: 0;
+}
+
+footer div#rights p {
+    color:#292929;
+    margin: 86 0 37 0;
+}
 
 
 
