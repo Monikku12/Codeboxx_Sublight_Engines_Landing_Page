@@ -3,16 +3,14 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    font-family: 'Roboto';
+    font-family: Roboto;
     font-style: normal;
     text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF; 
+    color: #FFFFFF;
 }
 
 main {
     width: 100%;
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -26,7 +24,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    position: sticky;
+    position: fixed;
     top: 24px;
     padding: 0;
     z-index: 999;
@@ -43,7 +41,7 @@ header nav {
 
 header nav ul li {
     display: inline-flex;
-    font-family: 'Roboto';
+    font-family: Roboto;
     font-style: normal;
     text-align: center;
     text-transform: uppercase;
@@ -64,7 +62,9 @@ section#hero {
 }
 
 section#hero div#text {
-    width: 100%;
+    padding-top: 653px;
+    width:100%;
+    text-transform: uppercase;
 }
 
 section#hero img {
@@ -81,10 +81,12 @@ section#services {
     align-items: center;
     text-align: center;
     flex-direction: column;
+    color: #FFFFFF;
 }
 
 section#services div#text {
     padding-top: 80px;
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 600px) {
@@ -104,16 +106,20 @@ section#services img.photo {
     width: 250px;
 }
 
-section#product-description {
+section#product_description {
     background-color: white;
     display:flex;
-    align-items: right;
-    text-align: left;
+    color: #292929;
 }
 
-section#product-description div#images {
-    height: 19.9%;
-    top:1751px;
+section#product_description div#text {
+    width: 40.69%;
+    padding-left: 5.21%;
+    padding-right: 6.04%;
+}
+
+section#product_description img {
+    width: 615px;
 }
 
 section#product_line {
@@ -123,39 +129,51 @@ section#product_line {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    color:#FFFFFF;
 }
 
 section#product_line div#product_cards {
     background-color: white; 
     display : flex;
-    justify-content: space-evenly;
 }
 
 section#product_line div#product_card {
-    width: 17.71%
+    display: flex;
+    flex-direction: column;
+    color: #383838;
 }
 
 section#product_line div#image {
     display: flex;
     justify-content: space-evenly;
-    width: 17.71%;
     padding-bottom: 0;
-}
-
-section#product_line div#button {
-  background-color: #FF7630;
-  height: 19.08%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 section#product_line div#image div#legend {
     background-color: white;
     display: flex;
     height: 103px ;
+}
+
+section#product_line div#legend #title {
+    text-transform: uppercase;
+}
+
+section#product_line div#button {
+    height: 19.08%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 3px solid #FFFFFF;
+    padding: 14 36 14 36;
+    margin-bottom: 116px;
+    margin-top: 92px;
+}
+
+section#product_line div#button h6 {
+    margin: 0;
 }
 
 section#service_request {
@@ -165,12 +183,14 @@ section#service_request {
     flex-direction: column;
     align-items: center;
     text-align: center;
+
 }
 
 section#service_request div#text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #FF7630;
 }
 
 section#service_request div#form {
@@ -179,7 +199,12 @@ section#service_request div#form {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    color: #292929;
+    width: 100%;
+}
 
+form {
+    padding-bottom: 104;
 }
 
 section#service_request fieldset {
@@ -195,12 +220,12 @@ section#service_request div#row {
 
 section#service_request div#field {
     display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-footer div#footer {
-    background-color: #292929;
-    height: 254px;
-    display: flex;
+section#service_request div#field label {
+display: flex;
 }
 
 
@@ -211,56 +236,73 @@ footer div#footer {
 
 /* FONTS AND TEXT PROPERTY */
 a {
-    font-family: 'Roboto';
+    font-family: Roboto;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
 }
 
 h1 {
-    font-family: 'Roboto';
+    font-family: Roboto;
     font-style: normal;
     font-weight: 900;
     font-size: 79px;
     line-height: 93px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
 }
 
 h2 {
-    font-family: 'Roboto';
+    font-family: Roboto;
     font-style: normal;
     font-weight: 800;
     font-size: 51px;
     line-height: 60px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
 }
 
 h3 {
-    font-family: 'Roboto';
+    font-family: Roboto;
     font-style: normal;
     font-weight: 900;
     font-size: 45px;
     line-height: 53px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
 }
 
+
 h4 {
-    font-family: 'Roboto';
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #292929;
+}
+
+
+h5 {
+    font-family: Roboto;
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
     line-height: 29px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
+}
+
+h6 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
 }
