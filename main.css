@@ -48,6 +48,35 @@ header nav ul li a {
     color: #FFFFFF;
 }
 
+nav .menu span {
+    width: 100%;
+    height: 2px;
+    border-radius: 99px;
+    background: #fff;
+    transition: 0.3s ease;
+    transform-origin: left;
+}
+  
+nav .menu.active span {
+    background: var(--main-clr);
+}
+
+nav .menu.active span:nth-child(1) {
+    transform: rotate(40deg);
+}
+
+nav .menu span:nth-child(3) {
+    transform-origin: left;
+}
+
+nav .menu.active span:nth-child(3) {
+    transform: rotate(-40deg);
+}
+
+nav .menu.active span:nth-child(2) {
+    transform: scale(0);
+}
+
 section#hero {
     display: flex;
     width: 100%;
@@ -58,13 +87,26 @@ section#hero {
     align-items: center;
     text-align: center;
     justify-content: flex-end;
-    /* padding: 653 0 63 0; */
 }
 
 section#hero div#text {
     padding-top: 653px;
     width:100%;
     text-transform: uppercase;
+}
+
+section#hero div#text h2 {
+    /* padding-top: 653px; */
+    width:100%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+section#hero div#text h1 {
+    /* padding-top: 653px; */
+    width:100%;
+    text-transform: uppercase;
+    margin: 0 0 39 0;
 }
 
 section#hero img {
@@ -93,6 +135,58 @@ section#services div#text {
     section#services div#images {
         flex-direction: column;
     }
+
+    section#product_description {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    section#product_line div#product_cards {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 93;
+    }
+
+    section#product_line div#button {
+        background: rgba(0, 0, 0, 0.69);
+        position: fixed;
+        margin: 16 0 40 0;
+        bottom: 0px;
+        padding: 0;
+        z-index: 999;
+    }
+
+    section#service_request div#form div#row {
+        flex-direction: column;
+    }
+
+    footer div#footer {
+        flex-direction: column; 
+    }
+
+    footer section#contact_us {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    footer section#contact_us div#usa {
+        align-items: center;
+        margin: 0;
+    }
+
+    footer section#contact_us div#usa div#address {
+        align-items: center;
+    }
+
+    footer section#contact_us div#canada {
+        align-items: center;
+        margin: 0;
+    }
+
+    footer section#contact_us div#canada div#address {
+        align-items: center;
+    }
 }
 
 section#services #separator {
@@ -113,21 +207,62 @@ section#services img.photo {
 section#product_description {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     background-color: white;
     color: #292929;
 }
 
 section#product_description div#text {
-    width: 40.69%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
     padding-left: 5.21%;
     padding-right: 6.04%;
+    text-align: left;
+}
+
+section#product_description div#text h5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 5.21%;
+    padding-right: 6.04%;
+    margin: 129 0 0 0;
+    text-align: left;
+}
+
+section#product_description div#text h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 5.21%;
+    padding-right: 6.04%;
+    margin: 4 0 24 0;
+    text-align: left;
+}
+
+section#product_description div#text p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 5.21%;
+    padding-right: 6.04%;
+    margin: 0 0 126 0;
+    text-align: left;
 }
 
 section#product_description img {
     display: flex;
     justify-content: flex-end;
-    width: 615px;
+    width: 100%;
+    padding-top: 80;
+    padding-bottom: 80;
 }
+
 
 section#product_line {
     background-color: #FF7630;
@@ -147,14 +282,14 @@ section#product_line div#product_cards {
     display: flex;
     justify-content: space-around;
     padding: 0 20 0 20;
-    width: 100%;
 }
 
 section#product_line div#product_card {
     display: flex;
     flex-direction: column;
     color: #383838;
-    width: 17.71%;
+    width: 255px;
+    padding-top: 20;
 }
 
 section#product_line div#legend {
@@ -185,11 +320,13 @@ section#product_line div#button {
     margin-bottom: 116px;
     margin-top: 92px;
     text-transform: uppercase;
+    font-size: 18px;
 }
 
 section#product_line div#button h6 {
     margin: 0;
 }
+
 
 section#service_request {
     background-color: white;
@@ -198,7 +335,6 @@ section#service_request {
     flex-direction: column;
     align-items: center;
     text-align: center;
-
 }
 
 section#service_request div#text {
@@ -206,6 +342,10 @@ section#service_request div#text {
     flex-direction: column;
     align-items: center;
     color: #FF7630;
+}
+
+section#service_request div#text h5 {
+    color:#292929;
 }
 
 section#service_request #separator {
@@ -401,4 +541,13 @@ h6 {
     font-size: 20px;
     line-height: 22px;
     text-align: center;
+}
+
+p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0;
 }
