@@ -48,7 +48,7 @@ header nav ul li a {
     color: #FFFFFF;
 }
 
-nav .menu span {
+/* nav .menu span {
     width: 100%;
     height: 2px;
     border-radius: 99px;
@@ -75,7 +75,7 @@ nav .menu.active span:nth-child(3) {
 
 nav .menu.active span:nth-child(2) {
     transform: scale(0);
-}
+} */
 
 section#hero {
     display: flex;
@@ -89,20 +89,20 @@ section#hero {
     justify-content: flex-end;
 }
 
-section#hero div#text {
+section#hero div.text {
     padding-top: 653px;
     width:100%;
     text-transform: uppercase;
 }
 
-section#hero div#text h2 {
+section#hero div.text h2 {
     /* padding-top: 653px; */
     width:100%;
     text-transform: uppercase;
     margin: 0;
 }
 
-section#hero div#text h1 {
+section#hero div.text h1 {
     /* padding-top: 653px; */
     width:100%;
     text-transform: uppercase;
@@ -126,13 +126,13 @@ section#services {
     color: #FFFFFF;
 }
 
-section#services div#text {
+section#services div.text {
     padding-top: 80px;
     text-transform: uppercase;
 }
 
-@media only screen and (max-width: 600px) {
-    section#services div#images {
+@media only screen and (max-width: 375px) {
+    section#services div.images {
         flex-direction: column;
     }
 
@@ -148,7 +148,7 @@ section#services div#text {
         padding-bottom: 93;
     }
 
-    section#product_line div#button {
+    section#product_line div.button {
         background: rgba(0, 0, 0, 0.69);
         position: fixed;
         margin: 16 0 40 0;
@@ -157,7 +157,7 @@ section#services div#text {
         z-index: 999;
     }
 
-    section#service_request div#form div#row {
+    section#service_request div#form div.row {
         flex-direction: column;
     }
 
@@ -175,7 +175,7 @@ section#services div#text {
         margin: 0;
     }
 
-    footer section#contact_us div#usa div#address {
+    footer section#contact_us div#usa div.address {
         align-items: center;
     }
 
@@ -184,16 +184,16 @@ section#services div#text {
         margin: 0;
     }
 
-    footer section#contact_us div#canada div#address {
+    footer section#contact_us div#canada div.address {
         align-items: center;
     }
 }
 
-section#services #separator {
+section#services .separator {
     margin-bottom: 78.25;
 }
 
-section#services div#images {
+section#services div.images {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -207,12 +207,12 @@ section#services img.photo {
 section#product_description {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: row;
     background-color: white;
     color: #292929;
 }
 
-section#product_description div#text {
+section#product_description div.text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -222,7 +222,7 @@ section#product_description div#text {
     text-align: left;
 }
 
-section#product_description div#text h5 {
+section#product_description div.text h5 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -233,7 +233,7 @@ section#product_description div#text h5 {
     text-align: left;
 }
 
-section#product_description div#text h4 {
+section#product_description div.text h4 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -244,7 +244,7 @@ section#product_description div#text h4 {
     text-align: left;
 }
 
-section#product_description div#text p {
+section#product_description div.text p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -274,17 +274,19 @@ section#product_line {
     color:#FFFFFF;
 }
 
-section#product_line #separator {
+section#product_line .separator {
     margin-bottom: 64.5;
 }
 
 section#product_line div#product_cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 0 20 0 20;
+    width: 100%;
 }
 
-section#product_line div#product_card {
+section#product_line div.product_card {
     display: flex;
     flex-direction: column;
     color: #383838;
@@ -292,23 +294,23 @@ section#product_line div#product_card {
     padding-top: 20;
 }
 
-section#product_line div#legend {
+section#product_line div.legend {
     background-color: white;
     display: flex;
     flex-direction: column;
     height: 103px ;
 }
 
-section#product_line div#legend h6 {
+section#product_line div.legend h6 {
     margin: 0 0 31.22 0;
 }
 
-section#product_line div#legend #title {
+section#product_line div.legend .title {
     text-transform: uppercase;
     margin: 14.38 0 6.06 0;
 }
 
-section#product_line div#button {
+section#product_line div.button {
     height: 19.08%;
     display: flex;
     justify-content: space-evenly;
@@ -323,7 +325,7 @@ section#product_line div#button {
     font-size: 18px;
 }
 
-section#product_line div#button h6 {
+section#product_line div.button h6 {
     margin: 0;
 }
 
@@ -337,18 +339,18 @@ section#service_request {
     text-align: center;
 }
 
-section#service_request div#text {
+section#service_request div.text {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #FF7630;
 }
 
-section#service_request div#text h5 {
+section#service_request div.text h5 {
     color:#292929;
 }
 
-section#service_request #separator {
+section#service_request .separator {
     margin-bottom: 52.5;
 }
 
@@ -367,6 +369,16 @@ form {
     width: 34.58%;
 }
 
+input:required:invalid {
+    background-color: thistle;
+}
+
+form:invalid button {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
 section#service_request fieldset {
     border: none;
     display:table-row;
@@ -375,30 +387,30 @@ section#service_request fieldset {
     text-transform: uppercase;
 }
 
-section#service_request fieldset div#row {
+section#service_request fieldset div.row {
     display: flex;
 }
 
-section#service_request div#field {
+section#service_request div.field {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-section#service_request div#field label {
+section#service_request div.field label {
     display: flex;
 }
 
-section#service_request div#field input {
+section#service_request div.field input {
     padding: 18 0 16 23;
 }
 
-section#service_request div#field select {
+section#service_request div.field select {
     padding: 18 0 16 23;
     margin-left: 1.81%
 }
 
-section#service_request div#button {
+section#service_request div.button {
     color: #292929;
     border: 3px solid;
     border-color: #292929;
@@ -406,7 +418,7 @@ section#service_request div#button {
     padding: 14 0 14 0;
 }
 
-section#service_request div#button h6{
+section#service_request div.button h6{
     margin: 0;
     text-transform: uppercase;
 }
@@ -427,7 +439,7 @@ section#contact_us {
     text-transform: uppercase;
 }
 
-section#contact_us div#country h6 {
+section#contact_us div.country h6 {
     margin: 80 0 7 0;
     color: #FF7630;
 }
@@ -439,7 +451,7 @@ section#contact_us div#usa {
     margin-left: 4.65%;
 }
 
-section#contact_us div#usa div#address {
+section#contact_us div#usa div.address {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -452,13 +464,13 @@ section#contact_us div#canada {
     margin-right: 4.65%;
 }
 
-section#contact_us div#canada div#address {
+section#contact_us div#canada div.address {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-section#contact_us div#address p {
+section#contact_us div.address p {
     margin: 0;
 }
 
