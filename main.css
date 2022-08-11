@@ -3,8 +3,6 @@ body {
     padding: 0;
     margin: 0;
     background-color: crimson;
-    font-family: Roboto;
-    font-style: normal;
 }
 
 main {
@@ -13,7 +11,7 @@ main {
     margin: 0;
 }
 
-img {
+.image {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -285,10 +283,11 @@ section#hero {
     height: 100%;
     background-size: cover;
     background-image: url("images/background.png");
-    display: flex;
+    flex-wrap: nowrap;
 }
 
 section#hero .text {
+    margin-top: 329px;
     width: 100%;
 }
 
