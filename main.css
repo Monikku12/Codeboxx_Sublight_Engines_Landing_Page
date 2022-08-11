@@ -5,8 +5,6 @@ body {
     background-color: crimson;
     font-family: Roboto;
     font-style: normal;
-    text-align: center;
-    color: #FFFFFF;
 }
 
 main {
@@ -15,6 +13,154 @@ main {
     margin: 0;
 }
 
+img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* ↓↓↓↓↓ FONTS PROPERTY ↓↓↓↓↓ */
+.font {
+    font-family: 'Roboto';
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+/* Normal */
+.n {
+    font-weight: 400;    
+}
+
+/* Bold */
+.b {
+    font-weight: 700;
+}
+
+/* Extra Bold */
+.eb {
+    font-weight: 800;
+}
+
+/* Heavy */
+.h {
+    font-weight: 900;
+}
+
+/* Uppercase */
+.u {
+    text-transform: uppercase;
+}
+
+/* Center */
+.c {
+    text-align: center;
+}
+
+/* White */
+.wh {
+    color: #FFFFFF;
+}
+
+/* Charcoal */
+.cl {
+    color: #292929;
+}
+
+/* Orange */
+.or {
+    color: #FF7630;
+}
+
+/* Light Gray */
+.lg {
+    color: #A0A0A0;
+}
+
+/* Dark Gray */
+.dg {
+    color: #383838;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 56px;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 53px;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+h4 {
+    font-size: 28px;
+    line-height: 33px;
+}
+
+h5 {
+    font-size: 25px;
+    line-height: 29px;
+}
+
+h6 {
+    font-size: 24px;
+    line-height: 28px;    
+}
+
+.t1 {
+    font-size: 22px;
+    line-height: 26px;    
+}
+
+.t2-22 {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.t2-23 {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.t3 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.t4-19 {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.t4-22 {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.t5 {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.t6 {
+    font-size: 10px;
+    line-height: 12px;
+}
+/* ↑↑↑↑↑ FONTS PROPERTY ↑↑↑↑↑ */
+
+/* ↓↓↓↓↓ NAVBAR & MENU ↓↓↓↓↓ */
 *,
 *::after,
 *::before {
@@ -32,18 +178,17 @@ main {
 header {
     background: rgba(0, 0, 0, 0.69);
     width: 100%;
-    height: 68px;
+    height: 93px;
     display: flex;
     justify-content: space-around;
     position: fixed;
-    top: 24px;
     padding: 0;
     z-index: 999;
     box-shadow: var(--nav-shadow);
 }
 
 header img {
-    width: 32.29%;
+    width: 51.03%;
 }
 
 header nav ul {
@@ -88,6 +233,7 @@ nav ul li a:hover::after {
 }
 
 nav .menu {
+    top: 20px;
     width: 22px;
     height: 16px;
     cursor: pointer;
@@ -127,18 +273,45 @@ nav .menu.active span:nth-child(3) {
 nav .menu.active span:nth-child(2) {
     transform: scale(0);
 }
+/* ↑↑↑↑↑ NAVBAR & MENU ↑↑↑↑↑ */
 
+
+/* ↓↓↓↓↓ SECTION HERO ↓↓↓↓↓ */
 section#hero {
-    display: flex;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-image: url("images/background.png");
+    display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     justify-content: flex-end;
 }
+
+
+/* ↑↑↑↑↑ SECTION HERO ↑↑↑↑↑ */
+
+
+/* ↓↓↓↓↓ SECTION HERO ↓↓↓↓↓ */
+
+/* ↑↑↑↑↑ SECTION HERO ↑↑↑↑↑ */
+
+
+/* ↓↓↓↓↓ SECTION HERO ↓↓↓↓↓ */
+
+/* ↑↑↑↑↑ SECTION HERO ↑↑↑↑↑ */
+
+
+/* ↓↓↓↓↓ SECTION HERO ↓↓↓↓↓ */
+
+/* ↑↑↑↑↑ SECTION HERO ↑↑↑↑↑ */
+
+
+/* ↓↓↓↓↓ SECTION HERO ↓↓↓↓↓ */
+
+/* ↑↑↑↑↑ SECTION HERO ↑↑↑↑↑ */
+
+
 
 @media only screen and (max-width: 910px) {
     nav .menu {
@@ -171,500 +344,15 @@ section#hero {
       width: 100%;
     }
 }
-  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-section#hero div.text {
-    padding-top: 653px;
-    width:100%;
-    text-transform: uppercase;
+@media only screen and (max-width: 768px) {
+    
 }
 
-section#hero div.text h2 {
-    /* padding-top: 653px; */
-    width:100%;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-section#hero div.text h1 {
-    /* padding-top: 653px; */
-    width:100%;
-    text-transform: uppercase;
-    margin: 0 0 39 0;
-}
-
-section#hero img {
-    display: flex;
-    padding-bottom: 68px;
-    border: 0;
-
-}
-
-section#services {
-    background-color: #383838;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    color: #FFFFFF;
-}
-
-section#services div.text {
-    padding-top: 80px;
-    text-transform: uppercase;
-}
-
-@media only screen and (max-width: 375px) {
-    section#services div.images {
-        flex-direction: column;
+@media only screen and (min-width: 1280px) {
+    header {
+        top: 24px;
     }
 
-    section#product_description {
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-    }
 
-    section#product_line div#product_cards {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        padding-bottom: 93;
-    }
-
-    section#product_line div.button {
-        background: rgba(0, 0, 0, 0.69);
-        position: fixed;
-        margin: 16 0 40 0;
-        bottom: 0px;
-        padding: 0;
-        z-index: 999;
-    }
-
-    section#service_request div#form div.row {
-        flex-direction: column;
-    }
-
-    footer div#footer {
-        flex-direction: column; 
-    }
-
-    footer section#contact_us {
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    footer section#contact_us div#usa {
-        align-items: center;
-        margin: 0;
-    }
-
-    footer section#contact_us div#usa div.address {
-        align-items: center;
-    }
-
-    footer section#contact_us div#canada {
-        align-items: center;
-        margin: 0;
-    }
-
-    footer section#contact_us div#canada div.address {
-        align-items: center;
-    }
 }
-
-section#services .separator {
-    margin-bottom: 78.25;
-}
-
-section#services div.images {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-}
-
-section#services img.photo {
-    height: 250px;
-    width: 250px;
-}
-
-section#product_description {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: white;
-    color: #292929;
-}
-
-section#product_description div.text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    padding-left: 5.21%;
-    padding-right: 6.04%;
-    text-align: left;
-}
-
-section#product_description div.text h5 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    padding-left: 5.21%;
-    padding-right: 6.04%;
-    margin: 129 0 0 0;
-    text-align: left;
-}
-
-section#product_description div.text h4 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    padding-left: 5.21%;
-    padding-right: 6.04%;
-    margin: 4 0 24 0;
-    text-align: left;
-}
-
-section#product_description div.text p {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    padding-left: 5.21%;
-    padding-right: 6.04%;
-    margin: 0 0 126 0;
-    text-align: left;
-}
-
-section#product_description img {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding-top: 80;
-    padding-bottom: 80;
-}
-
-
-section#product_line {
-    background-color: #FF7630;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color:#FFFFFF;
-}
-
-section#product_line .separator {
-    margin-bottom: 64.5;
-}
-
-section#product_line div#product_cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    /* padding: 0 20 0 20; */
-    width: 100%;
-}
-
-section#product_line div.product_card {
-    display: flex;
-    flex-direction: column;
-    color: #383838;
-    width: 255px;
-    padding-top: 20;
-}
-
-section#product_line div.legend {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    height: 103px ;
-}
-
-section#product_line div.legend h6 {
-    margin: 0 0 31.22 0;
-}
-
-section#product_line div.legend .title {
-    text-transform: uppercase;
-    margin: 14.38 0 6.06 0;
-}
-
-section#product_line div.button {
-    height: 19.08%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 3px solid #FFFFFF;
-    padding: 14 36 14 36;
-    margin-bottom: 116px;
-    margin-top: 92px;
-    text-transform: uppercase;
-    font-size: 18px;
-}
-
-section#product_line div.button h6 {
-    margin: 0;
-}
-
-
-section#service_request {
-    background-color: white;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-section#service_request div.text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #FF7630;
-}
-
-section#service_request div.text h5 {
-    color:#292929;
-}
-
-section#service_request .separator {
-    margin-bottom: 52.5;
-}
-
-section#service_request div#form {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: #292929;
-    width: 100%;
-}
-
-form {
-    padding-bottom: 104;
-    width: 34.58%;
-}
-
-input:required:invalid {
-    background-color: thistle;
-}
-
-form:invalid button {
-    opacity: 0.3;
-    pointer-events: none;
-}
-
-
-section#service_request fieldset {
-    border: none;
-    display:table-row;
-    width: 100%;
-    padding: 0;
-    text-transform: uppercase;
-}
-
-section#service_request fieldset div.row {
-    display: flex;
-}
-
-section#service_request div.field {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-section#service_request div.field label {
-    display: flex;
-}
-
-section#service_request div.field input {
-    padding: 18 0 16 23;
-}
-
-section#service_request div.field select {
-    padding: 18 0 16 23;
-    margin-left: 1.81%
-}
-
-section#service_request div.button {
-    color: #292929;
-    border: 3px solid;
-    border-color: #292929;
-    margin: 47 0 104 0;
-    padding: 14 0 14 0;
-}
-
-section#service_request div.button h6{
-    margin: 0;
-    text-transform: uppercase;
-}
-
-footer div#footer {
-    display: flex;
-    justify-content: space-around;
-    background-color:#292929;
-    padding: 100 0 101 0;
-}
-
-section#contact_us {
-    color:#292929;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-transform: uppercase;
-}
-
-section#contact_us div.country h6 {
-    margin: 80 0 7 0;
-    color: #FF7630;
-}
-
-section#contact_us div#usa {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 4.65%;
-}
-
-section#contact_us div#usa div.address {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-section#contact_us div#canada {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-right: 4.65%;
-}
-
-section#contact_us div#canada div.address {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-section#contact_us div.address p {
-    margin: 0;
-}
-
-footer div#rights p {
-    color:#292929;
-    margin: 86 0 37 0;
-}
-
-
-
-
-/* FONTS AND TEXT PROPERTY */
-/* a {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-h1 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 79px;
-    line-height: 93px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 51px;
-    line-height: 60px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 45px;
-    line-height: 53px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-
-h4 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 42px;
-    text-transform: uppercase;
-    color: #292929;
-}
-
-
-h5 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 29px;
-    text-align: center;
-    text-transform: uppercase;
-    /* color: #FFFFFF; */
-}
-
-h6 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 22px;
-    text-align: center;
-}
-
-p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 22px;
-    margin: 0;
-} */

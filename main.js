@@ -1,5 +1,4 @@
-// HAMBURGER MENU
-
+// ↓↓↓↓↓ HAMBURGER MENU ↓↓↓↓↓
 const navigation = document.getElementById("navbar");
 const menu = document.getElementById("menu");
 
@@ -9,7 +8,7 @@ menu.addEventListener("click", () => {
   navigation.classList.toggle("active");
   menu.classList.toggle("active");
 });
-
+// ↑↑↑↑↑ HAMBURGER MENU ↑↑↑↑↑
 
 
 
