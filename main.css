@@ -23,6 +23,10 @@ img {
     margin: 0;
 }
 
+.separator {
+    width: 43.59%;
+}
+
 /* ↓↓↓↓↓ FONTS PROPERTY ↓↓↓↓↓ */
 .font {
     font-family: 'Roboto';
@@ -295,6 +299,10 @@ section#hero img {
 
 
 /* ↓↓↓↓↓ SECTION SERVICES ↓↓↓↓↓ */
+section#services {
+    background: #383838;
+}
+
 section#services div#images img {
     width: 65.38%;
 }
@@ -304,40 +312,53 @@ section#services div#images img {
 
 
 /* ↓↓↓↓↓ SECTION PRODUCT DESCRIPTION ↓↓↓↓↓ */
+section#product_description {
+    background: #FFFFFF;
+}
+
 section#product_description img {
     width: 87.44%;
 }
-
-
 
 /* ↑↑↑↑↑ SECTION PRODUCT DESCRIPTION ↑↑↑↑↑ */
 
 
 /* ↓↓↓↓↓ SECTION PRODUCT LINE ↓↓↓↓↓ */
+section#product_line {
+    background: #FF7630;
+}
+
 section#product_cards img {
     width: 65.38%;
 }
 
-
-
 /* ↑↑↑↑↑ SECTION PRODUCT LINE ↑↑↑↑↑ */
 
 
+/* ↓↓↓↓↓ SECTION SERVICE REQUEST ↓↓↓↓↓ */
+section#service_request {
+    background: #FFFFFF;
+}
+/* ↑↑↑↑↑ SECTION SERVICE REQUEST ↑↑↑↑↑ */
+
+
 /* ↓↓↓↓↓ FOOTER ↓↓↓↓↓ */
+footer {
+    background: #292929;
+}
+
 footer img {
     width: 76.41%;
 }
 /* ↑↑↑↑↑ FOOTER ↑↑↑↑↑ */
 
 
-/* ↓↓↓↓↓ SECTION HERO ↓↓↓↓↓ */
+/* ↓↓↓↓↓ SECTION CONTACT US ↓↓↓↓↓ */
+section#contact_us {
+    background: #FFFFFF;
+}
 
-/* ↑↑↑↑↑ SECTION HERO ↑↑↑↑↑ */
-
-
-/* ↓↓↓↓↓ SECTION HERO ↓↓↓↓↓ */
-
-/* ↑↑↑↑↑ SECTION HERO ↑↑↑↑↑ */
+/* ↑↑↑↑↑ SECTION CONTACT US ↑↑↑↑↑ */
 
 
 /* ↓↓↓↓↓ SECTION HERO ↓↓↓↓↓ */
