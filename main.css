@@ -1,14 +1,14 @@
 body {
     width: 100%;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     background-color: violet;
 }
 
 main {
     width: 100%;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
 
@@ -58,6 +58,10 @@ section {
 
 
 /* ↓↓↓↓↓ MARGIN PROPERTY ↓↓↓↓↓ */
+.mt9 {
+    margin-top: 9px;
+}
+
 .mt13 {
     margin-top: 13px;
 }
@@ -90,6 +94,10 @@ section {
     margin-top: 54px;
 }
 
+.mt60 {
+    margin-top: 60px;
+}
+
 .mt70 {
     margin-top: 70px;
 }
@@ -119,7 +127,7 @@ section {
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    padding: 0;
+    padding: 0px;
 }
 
 .separator {
@@ -194,24 +202,25 @@ section {
 h1 {
     font-size: 48px;
     line-height: 56px;
-    margin: 9 0 39 0;
+    margin: 9px 0px 39px 0px;
 }
 
 h2 {
     font-size: 45px;
     line-height: 53px;
+    margin: 0px;
 }
 
 h3 {
     font-size: 30px;
     line-height: 35px;
-    margin: 0;
+    margin: 0px;
 }
 
 h4 {
     font-size: 28px;
     line-height: 33px;
-    margin: 329 0 0 0;
+    margin: 0px;
 }
 
 h5 {
@@ -271,7 +280,7 @@ h6 {
 *::after,
 *::before {
   /* margin: 0; */
-  padding: 0;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -288,7 +297,7 @@ header {
     display: flex;
     justify-content: space-around;
     position: fixed;
-    padding: 0;
+    padding: 0px;
     z-index: 999;
     box-shadow: var(--nav-shadow);
 }
@@ -329,8 +338,8 @@ nav ul li a::after {
     border-radius: 99px;
     background: var(--main-clr);
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 0px;
+    left: 0px;
     transition: 0.3s ease;
 }
 
@@ -397,11 +406,16 @@ section#hero {
 
 section#hero .text {
     width: 100%;
+    padding-top: 329px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Elevator button -- TO BE FIXED */
 section#hero img {
     width: 16.67%;
+    position: absolute;
+    top: 522px;
 }
 /* ↑↑↑↑↑ SECTION HERO ↑↑↑↑↑ */
 
@@ -531,6 +545,7 @@ section#service_request #submit {
     padding: 14px 20px 14px 20px;
     border: 3px solid #292929;
     width: 100%;
+    background-color: #FFFFFF;
  }
 
 .error {       
@@ -564,17 +579,18 @@ section#service_request #submit {
 /* ↓↓↓↓↓ FOOTER ↓↓↓↓↓ */
 footer {
     background: #FFFFFF;
-    height: 953px;
+    height: 1059px;
 }
 
 footer div#footer {
     background: #292929;
     height: 405px;
-    
+    padding: 0px 26px 0px 26px;
 }
 
 footer img {
     width: 76.41%;
+    margin: 39px;
 }
 /* ↑↑↑↑↑ FOOTER ↑↑↑↑↑ */
 
@@ -583,6 +599,19 @@ footer img {
 section#contact_us {
     background: #FFFFFF;
     height: 548px;
+    padding-top: 63px;
+}
+
+section#contact_us .country {
+    padding-top: 7px;
+}
+
+section#contact_us .address p{
+    margin: 0px;
+}
+
+section#contact_us #rights {
+    padding-top: 95px;
 }
 /* ↑↑↑↑↑ SECTION CONTACT US ↑↑↑↑↑ */
 
@@ -599,7 +628,7 @@ section#contact_us {
         background: var(--nav-bg);
         position: absolute;
         width: 100%;
-        left: 0;
+        left: 0px;
         top: 70px;
         height: var(--height);
         transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
