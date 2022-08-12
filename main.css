@@ -406,12 +406,12 @@ section#hero {
 
 section#hero .text {
     width: 100%;
-    padding-top: 329px;
+    padding: 329px 19px 0px 19px;
     display: flex;
     flex-direction: column;
 }
 
-/* Elevator button -- TO BE FIXED */
+/* Elevator button */
 section#hero img {
     width: 16.67%;
     position: absolute;
