@@ -2,7 +2,7 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: crimson;
+    background-color: violet;
 }
 
 main {
@@ -11,6 +11,92 @@ main {
     margin: 0;
 }
 
+
+/* ↓↓↓↓↓ DISPLAY PROPERTY ↓↓↓↓↓ */
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+}
+
+.fdc {
+    flex-direction: column;
+}
+
+.fdr {
+    flex-direction: row;
+}
+
+.fdcr {
+    flex-direction: column-reverse;
+}
+
+.fww {
+    flex-wrap: wrap;
+}
+
+.fwn {
+    flex-wrap: nowrap;
+}
+
+.acc {
+    align-content: center
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.jcsa {
+    justify-content:space-around;
+}
+
+.jcsb {
+    justify-content:space-between;
+}
+/* ↑↑↑↑↑ DISPLAY PROPERTY ↑↑↑↑↑ */
+
+
+/* ↓↓↓↓↓ MARGIN PROPERTY ↓↓↓↓↓ */
+.mt14 {
+    margin-top: 14px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mt25 {
+    margin-top: 25px;
+}
+
+.mt54 {
+    margin-top: 54px;
+}
+
+.mt70 {
+    margin-top: 70px;
+}
+
+.mt80 {
+    margin-top: 80px;
+}
+
+.mb805 {
+    margin-bottom: 80.5px;
+}
+
+.mtb10 {
+    margin: 10 0 10 0;
+}
+
+.mtb25-435 {
+    margin: 25 0 43.5 0;
+}
+/* ↑↑↑↑↑ MARGIN PROPERTY ↑↑↑↑↑ */
+
+
+/* ↓↓↓↓↓ IMAGES PROPERTY ↓↓↓↓↓ */
 .image {
     display: flex;
     flex-direction: column;
@@ -18,21 +104,18 @@ main {
     align-content: center;
     align-items: center;
     padding: 0;
-    margin: 0;
 }
 
 .separator {
     width: 43.59%;
 }
+/* ↑↑↑↑↑ IMAGES PROPERTY ↑↑↑↑↑ */
+
 
 /* ↓↓↓↓↓ FONTS PROPERTY ↓↓↓↓↓ */
 .font {
     font-family: 'Roboto';
     font-style: normal;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
 }
 
 /* Normal */
@@ -90,9 +173,12 @@ main {
     color: #383838;
 }
 
+
+/* Text & Title */
 h1 {
     font-size: 48px;
     line-height: 56px;
+    margin: 9 0 39 0;
 }
 
 h2 {
@@ -103,11 +189,13 @@ h2 {
 h3 {
     font-size: 30px;
     line-height: 35px;
+    margin: 0;
 }
 
 h4 {
     font-size: 28px;
     line-height: 33px;
+    margin: 329 0 0 0;
 }
 
 h5 {
@@ -116,8 +204,9 @@ h5 {
 }
 
 h6 {
-    font-size: 24px;
-    line-height: 28px;    
+    font-size: 22px;
+    line-height: 28.5px;
+    margin: 0;    
 }
 
 .t1 {
@@ -165,7 +254,7 @@ h6 {
 *,
 *::after,
 *::before {
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
   box-sizing: border-box;
 }
@@ -280,17 +369,21 @@ nav .menu.active span:nth-child(2) {
 /* ↓↓↓↓↓ SECTION HERO ↓↓↓↓↓ */
 section#hero {
     width: 100%;
-    height: 100%;
+    height: 554px;
+    background-repeat: no-repeat;
     background-size: cover;
     background-image: url("images/background.png");
+    background-origin: content-box;
+    background-position: top;
     flex-wrap: nowrap;
+    z-index: 2;
 }
 
 section#hero .text {
-    margin-top: 329px;
     width: 100%;
 }
 
+/* Elevator button -- TO BE FIXED */
 section#hero img {
     width: 16.67%;
 }
@@ -300,50 +393,121 @@ section#hero img {
 /* ↓↓↓↓↓ SECTION SERVICES ↓↓↓↓↓ */
 section#services {
     background: #383838;
+    height: 1513px; 
 }
 
 section#services div#images img {
     width: 65.38%;
 }
-
-
 /* ↑↑↑↑↑ SECTION SERVICES ↑↑↑↑↑ */
 
 
 /* ↓↓↓↓↓ SECTION PRODUCT DESCRIPTION ↓↓↓↓↓ */
 section#product_description {
     background: #FFFFFF;
+    height: 796px;
+    padding: 0 24 0 24;
+    flex-direction: column-reverse;
+    justify-content: space-evenly
 }
 
 section#product_description img {
     width: 87.44%;
-}
 
+}
 /* ↑↑↑↑↑ SECTION PRODUCT DESCRIPTION ↑↑↑↑↑ */
 
 
 /* ↓↓↓↓↓ SECTION PRODUCT LINE ↓↓↓↓↓ */
 section#product_line {
     background: #FF7630;
+    height: 1842px;
+    padding: 0 24 0 24;
+
 }
 
-section#product_cards img {
-    width: 65.38%;
+section#product_line .product_card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 32px;
 }
 
+section#product_line .legend {
+    width: 255px;
+    background-color: #FFFFFF;
+
+
+}
 /* ↑↑↑↑↑ SECTION PRODUCT LINE ↑↑↑↑↑ */
+
+
+/* ↓↓↓↓↓ SECTION DOWNLOAD BUTTON ↓↓↓↓↓ */
+section#download_button {
+    background: rgba(0, 0, 0, 0.69);
+    width: 100%;
+    height: 106px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+}
+
+section#download_button p {
+    border: 3px solid #FFFFFF;
+    padding: 11 33 11 33;
+}
+/* ↑↑↑↑↑ SECTION DOWNLOAD BUTTON ↑↑↑↑↑ */
 
 
 /* ↓↓↓↓↓ SECTION SERVICE REQUEST ↓↓↓↓↓ */
 section#service_request {
     background: #FFFFFF;
+    height: 735px;
+    margin: 0 19 0 19;
 }
+
+.error {       
+    color: red;
+    font-size: 12px !important;
+    position: relative;
+    top: -10px;
+    left: 40px;
+  }
+   
+  #successMessage {
+    color: green;
+    font-size: 15px !important;
+    display:none;
+    position: relative;
+    top: -20px;
+    left: 40px; 
+  }
+   
+  #errorMessage {
+    color: red;
+    font-size: 15px !important;
+    display:none;
+    position: relative;
+    top: -20px;
+    left: 40px; 
+  }
 /* ↑↑↑↑↑ SECTION SERVICE REQUEST ↑↑↑↑↑ */
 
 
 /* ↓↓↓↓↓ FOOTER ↓↓↓↓↓ */
 footer {
+    background: #FFFFFF;
+    height: 953px;
+}
+
+footer div#footer {
     background: #292929;
+    height: 405px;
 }
 
 footer img {
@@ -355,24 +519,10 @@ footer img {
 /* ↓↓↓↓↓ SECTION CONTACT US ↓↓↓↓↓ */
 section#contact_us {
     background: #FFFFFF;
+    height: 548px;
 }
-
 /* ↑↑↑↑↑ SECTION CONTACT US ↑↑↑↑↑ */
 
-
-/* ↓↓↓↓↓ SECTION HERO ↓↓↓↓↓ */
-
-/* ↑↑↑↑↑ SECTION HERO ↑↑↑↑↑ */
-
-
-/* ↓↓↓↓↓ SECTION HERO ↓↓↓↓↓ */
-
-/* ↑↑↑↑↑ SECTION HERO ↑↑↑↑↑ */
-
-
-/* ↓↓↓↓↓ SECTION HERO ↓↓↓↓↓ */
-
-/* ↑↑↑↑↑ SECTION HERO ↑↑↑↑↑ */
 
 @media only screen and (max-width: 910px) {
     nav .menu {
