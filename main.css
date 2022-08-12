@@ -406,7 +406,7 @@ section#services div#images img {
 section#product_description {
     background: #FFFFFF;
     height: 796px;
-    padding: 0 24 0 24;
+    padding: 0px 24px 0px 24px;
     flex-direction: column-reverse;
     justify-content: space-evenly
 }
@@ -422,7 +422,7 @@ section#product_description img {
 section#product_line {
     background: #FF7630;
     height: 1842px;
-    padding: 0 24 0 24;
+    padding: 0px 24px 0px 24px;
 
 }
 
@@ -459,7 +459,7 @@ section#download_button {
 
 section#download_button p {
     border: 3px solid #FFFFFF;
-    padding: 11 33 11 33;
+    padding: 11px 33px 11px 33px;
 }
 /* ↑↑↑↑↑ SECTION DOWNLOAD BUTTON ↑↑↑↑↑ */
 
