@@ -58,6 +58,10 @@ section {
 
 
 /* ↓↓↓↓↓ MARGIN PROPERTY ↓↓↓↓↓ */
+.mt13 {
+    margin-top: 13px;
+}
+
 .mt14 {
     margin-top: 14px;
 }
@@ -66,8 +70,20 @@ section {
     margin-top: 15px;
 }
 
+.mt24 {
+    margin-top: 24px;
+}
+
 .mt25 {
     margin-top: 25px;
+}
+
+.mt39 {
+    margin-top: 39px;
+}
+
+.mt44 {
+    margin-top: 44px;
 }
 
 .mt54 {
@@ -87,11 +103,11 @@ section {
 }
 
 .mtb10 {
-    margin: 10 0 10 0;
+    margin: 10px 0px 10px 0px;
 }
 
 .mtb25-435 {
-    margin: 25 0 43.5 0;
+    margin: 25px 0px 43.5px 0px;
 }
 /* ↑↑↑↑↑ MARGIN PROPERTY ↑↑↑↑↑ */
 
@@ -468,8 +484,54 @@ section#download_button p {
 section#service_request {
     background: #FFFFFF;
     height: 735px;
-    margin: 0 19 0 19;
 }
+
+section#service_request p {
+    margin-top: 44px;
+}
+
+section#service_request h6 {
+    margin: 14px 24px 0px 26px;
+}
+
+section#service_request div#form {
+    width: 87.18%;
+}
+
+section#service_request fieldset {
+    border: none;
+}
+
+section#service_request .field {
+    display: flex;
+    flex-direction: column;
+}
+
+section#service_request input {
+   height: 52px;
+   margin-top: 6px;
+   padding: 18px 23px 16px 23px;
+   border: 1px solid #A0A0A0;
+   appearance: none;
+   width: 100%;
+}
+
+section#service_request select {
+    height: 52px;
+    margin-top: 6px;
+    padding: 18px 23px 16px 23px;
+    border: 1px solid #A0A0A0;
+    appearance: none;
+    width: 100%;
+ }
+ 
+section#service_request #submit {
+    height: 50px;
+    margin: 39px 0px 0px 0px;
+    padding: 14px 20px 14px 20px;
+    border: 3px solid #292929;
+    width: 100%;
+ }
 
 .error {       
     color: red;
@@ -508,6 +570,7 @@ footer {
 footer div#footer {
     background: #292929;
     height: 405px;
+    
 }
 
 footer img {
@@ -524,6 +587,7 @@ section#contact_us {
 /* ↑↑↑↑↑ SECTION CONTACT US ↑↑↑↑↑ */
 
 
+/* ↓↓↓↓↓ TABLET ↓↓↓↓↓ */
 @media only screen and (max-width: 910px) {
     nav .menu {
       display: flex;
@@ -555,11 +619,17 @@ section#contact_us {
       width: 100%;
     }
 }
+/* ↑↑↑↑↑ SCREEN 960 ↑↑↑↑↑ */
 
+
+/* ↓↓↓↓↓ TABLET ↓↓↓↓↓ */
 @media only screen and (max-width: 768px) {
     
 }
+/* ↑↑↑↑↑ TABLET ↑↑↑↑↑ */
 
+
+/* ↓↓↓↓↓ LAPTOP ↓↓↓↓↓ */
 @media only screen and (min-width: 1280px) {
     header {
         top: 24px;
@@ -567,3 +637,4 @@ section#contact_us {
 
 
 }
+/* ↑↑↑↑↑ LAPTOP ↑↑↑↑↑ */
