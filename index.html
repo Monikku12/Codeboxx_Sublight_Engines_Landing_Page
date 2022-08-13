@@ -6,8 +6,9 @@
 		<meta name="description" content="Sublight Engines Official Website" />
 		<meta name="Author" content="Monique Payment-Boulanger [https://monikku12.github.io/Sublight_Engines_Landing_Page/]" />
 		<meta name="keywords" content="elevator, cab, control, elevator, sublight, engine, contact, service, product, catalog">
-        <meta name="viewport" content="width=device-width, height=6499, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     
     <body>
@@ -55,7 +56,7 @@
             <!-- SECTION SERVICES -->
             <section id="services">
                 <div class="text">
-                    <p class="font b c u wh t4-19 mt80">one-stop for your elevator needs</p>
+                    <p id="t4" class="font b c u wh t4-19 mt80">one-stop for your elevator needs</p>
                     <h6 class="font h c u wh mt14">one step closer to success</h6>
                 </div>
                 <div class="image jcsa mt25 mb805">
@@ -63,15 +64,15 @@
                 </div>
                 <div class="images">
                     <div id="design" class="image jcsa">
-                        <img src="images/design.svg" alt="design" />
+                        <img id="design" src="images/design.svg" alt="design" />
                         <h5 class="font b c u wh">we design</h5>
                     </div>
                     <div id="build" class="image jcsa">
-                        <img src="images/build.svg" alt="build" />
+                        <img id="build" src="images/build.svg" alt="build" />
                         <h5 class="font b c u wh">we build</h5>
                     </div>
                     <div id="maintenance" class="image jcsa">
-                        <img src="images/maintenance.svg" alt="maintenance" />
+                        <img id="maintenance" src="images/maintenance.svg" alt="maintenance" />
                         <h5 class="font b c u wh">we maintain</h5>
                     </div>
                 </div>
@@ -81,7 +82,7 @@
             <!-- SECTION PRODUCT DESCRIPTION -->
             <section id="product_description">
                 <div class="p">
-                    <p class="font b u t2-23 cl mtb10">2022 SECUREBOARDS SERIES</p>
+                    <p id="2022" class="font b u t2-23 cl mtb10">2022 SECUREBOARDS SERIES</p>
                     <h3 class="font h u cl">the perfection in security</h3>
                     <p class="font n t4-22 mt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate diam placerat a et pulvinar sapien orci mauris platea.
                         Consectetur non adipiscing duis quis leo integer adipiscing elit. Felis, cursus aenean at egestas mauris. Senectus pharetra
@@ -98,7 +99,7 @@
             <!-- SECTION PRODUCT LINE -->
             <section id="product_line" class="image">
                 <div class="text">
-                    <p class="font b c u wh t4-19">need more for your fleet of elevator</p>
+                    <p id="t4" class="font b c u wh t4-19">need more for your fleet of elevator</p>
                     <h6 class="font h c u wh">all our products are made with heart and soul</h6>
                 </div>
                 <img class="separator" src="images/separator.svg"></img>
@@ -156,14 +157,13 @@
             <!-- SECTION SERVICE REQUEST -->
             <section id="service_request" class="image">
                 <div class="text">    
-                    <p class="font b c u cl t4-19">stay in touch with our customer service</p>
+                    <p id="t4" class="font b c u cl t4-19">stay in touch with our customer service</p>
                     <h6 class="font h c u or mt14">feel free to contact us for any questions</h6>
                 </div>
                 <img class="separator mtb25-435" src="images/separator.svg"></img>
 
                 <!-- FORM -->
                 <div id="form">
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                     <form name="contact_us" action="">
                         <div id="successMessage">Good job! Your message was sent!.</div>
                         <div id="errorMessage"> <span>&#9888;</span>Sorry, you need to fix something first.</div>
@@ -226,20 +226,20 @@
                     <div class="country">
                         <p class="font b c u or t5">united states office</p>
                     </div>
-                    <div class="address">
+                    <div class="address usa">
                         <p class="font n c u cl t1">456 harlem boulevard</p>
                         <p class="font n c u cl t1">saratoga springs, ny, usa</p>
-                        <p class="font n c u cl t1">1 999 543-4567</p>
+                        <p class="font b c u cl t1">1 999 543-4567</p>
                     </div>
                 </div>
                 <div id="canada mt44">
                     <div class="country mt44">
                         <p class="font b c u or t5">canada office</p>
                     </div>
-                    <div class="address">
+                    <div class="address canada">
                         <p class="font n c u cl t1">23895 bradshaw boulevard</p>
                         <p class="font n c u cl t1">kingston, ont, ca 1 999 543-4567</p>
-                        <p class="font n c u cl t1">1 999 543-4567</p>
+                        <p class="font b c u cl t1">1 999 543-4567</p>
                     </div>
                 </div>
                 <div id="rights">

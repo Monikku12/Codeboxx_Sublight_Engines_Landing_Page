@@ -20,7 +20,7 @@ $(function() {
 
   $("#submit").click (function() {
 
-    console.log('FORM SUBMIT')
+    console.log('form submit');
 
     var nameMissing = "";
     var emailMissing = "";
@@ -32,7 +32,6 @@ $(function() {
       emailMissing = "Email address is empty!";
       $("#emailMissing").html(emailMissing);
     }
-    log("#email")
   
     if (validateEmail($("#email").val()) == false) {
       emailErrorMessage = "Please enter a valid email address.";
