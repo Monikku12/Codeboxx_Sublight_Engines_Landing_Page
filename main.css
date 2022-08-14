@@ -314,7 +314,7 @@ header nav ul {
     font-size: var(--font-size);
     overflow-y: hidden;
     transition: 1s cubic-bezier(.68,-0.55,.27,10.55);
-    box-shadow: var(--nav-shadow);
+    /* box-shadow: var(--nav-shadow); */
 }
 
 header nav ul li {
@@ -639,7 +639,6 @@ section#rights {
     }
     nav ul {
         --height: 0px;
-    
         flex-direction: column;
         background: var(--nav-bg);
         position: absolute;
@@ -686,6 +685,10 @@ section#rights {
         margin-top: 0px;
     }
 
+    .mt13 {
+        margin-top: 24px;
+    }
+
     .mt14 {
         margin-top: 3.5px;
     }
@@ -696,6 +699,11 @@ section#rights {
 
     .mt25 {
         margin-top: 22.4px;
+    }
+
+    .mt39 {
+        margin-top: 39px;
+        margin-bottom: 92.5px;
     }
 
     .mt44 {
@@ -892,7 +900,7 @@ section#rights {
 
     /* ↓↓↓↓↓ SECTION SERVICE REQUEST ↓↓↓↓↓ */
     section#service_request {
-        height: 714.6px;
+        height: 807px;
         flex-wrap: nowrap;
     }
     
@@ -934,7 +942,11 @@ section#rights {
     section#service_request .field {
         width: 100%;
         display: flex;
-        
+    }
+
+    section#service_request .double{
+    display: flex;
+    align-items: flex-start;
     }
    
     .error {       
