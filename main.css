@@ -1,5 +1,6 @@
 body {
     width: 100%;
+    height: 6499;
     padding: 0px;
     margin: 0px;
     background-color: violet;
@@ -131,7 +132,7 @@ section {
 }
 
 .separator {
-    width: 43.59%;
+    width: 170px;
 }
 /* ↑↑↑↑↑ IMAGES PROPERTY ↑↑↑↑↑ */
 
@@ -313,7 +314,7 @@ header nav ul {
     font-size: var(--font-size);
     overflow-y: hidden;
     transition: 1s cubic-bezier(.68,-0.55,.27,10.55);
-    box-shadow: var(--nav-shadow);
+    /* box-shadow: var(--nav-shadow); */
 }
 
 header nav ul li {
@@ -357,7 +358,7 @@ nav .menu {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 nav .menu span {
@@ -406,14 +407,14 @@ section#hero {
 
 section#hero .text {
     width: 100%;
-    padding: 329px 19px 0px 19px;
+    padding: 329px 0px 0px 0px;
     display: flex;
     flex-direction: column;
 }
 
 /* Elevator button */
 section#hero img {
-    width: 16.67%;
+    width: 65px;
     position: absolute;
     top: 522px;
 }
@@ -426,8 +427,12 @@ section#services {
     height: 1513px; 
 }
 
-section#services div#images img {
-    width: 65.38%;
+section#services img#design, img#maintenance {
+    width: 250px;
+}
+
+section#services img#build {
+    width: 269px;
 }
 /* ↑↑↑↑↑ SECTION SERVICES ↑↑↑↑↑ */
 
@@ -442,8 +447,7 @@ section#product_description {
 }
 
 section#product_description img {
-    width: 87.44%;
-
+    width: 100%;
 }
 /* ↑↑↑↑↑ SECTION PRODUCT DESCRIPTION ↑↑↑↑↑ */
 
@@ -453,10 +457,9 @@ section#product_line {
     background: #FF7630;
     height: 1842px;
     padding: 0px 24px 0px 24px;
-
 }
 
-section#product_line .product_card {
+section#product_line .product_card{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -464,13 +467,12 @@ section#product_line .product_card {
     align-items: center;
     justify-content: space-evenly;
     padding-bottom: 32px;
+    width: 255px;
 }
 
 section#product_line .legend {
-    width: 255px;
+    /* width: 255px; */
     background-color: #FFFFFF;
-
-
 }
 /* ↑↑↑↑↑ SECTION PRODUCT LINE ↑↑↑↑↑ */
 
@@ -505,7 +507,7 @@ section#service_request p {
 }
 
 section#service_request h6 {
-    margin: 14px 24px 0px 26px;
+    margin: 14px 0px 0px 26px;
 }
 
 section#service_request div#form {
@@ -550,22 +552,25 @@ section#service_request #submit {
 
 .error {       
     color: red;
-    font-size: 12px !important;
+    font-size: 15px !important;
     position: relative;
-    top: -10px;
-    left: 40px;
+    top: 5px;
+    right: -25px;
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-style: normal;
   }
    
-  #successMessage {
+#successMessage {
     color: green;
     font-size: 15px !important;
     display:none;
     position: relative;
     top: -20px;
     left: 40px; 
-  }
-   
-  #errorMessage {
+}
+
+#errorMessage {
     color: red;
     font-size: 15px !important;
     display:none;
@@ -598,8 +603,9 @@ footer img {
 /* ↓↓↓↓↓ SECTION CONTACT US ↓↓↓↓↓ */
 section#contact_us {
     background: #FFFFFF;
-    height: 548px;
+    height: 361px;
     padding-top: 63px;
+    flex-wrap: nowrap;
 }
 
 section#contact_us .country {
@@ -616,14 +622,23 @@ section#contact_us #rights {
 /* ↑↑↑↑↑ SECTION CONTACT US ↑↑↑↑↑ */
 
 
-/* ↓↓↓↓↓ TABLET ↓↓↓↓↓ */
+/* ↓↓↓↓↓ SECTION RIGHTS ↓↓↓↓↓ */
+section#rights {
+    background: #FFFFFF;
+    height: 187px;
+    padding-top: 95px;
+    display: flex;
+    
+}
+
+
+/* ↓↓↓↓↓ MENU SMARTPHONE ↓↓↓↓↓ */
 @media only screen and (max-width: 910px) {
     nav .menu {
       display: flex;
     }
     nav ul {
         --height: 0px;
-    
         flex-direction: column;
         background: var(--nav-bg);
         position: absolute;
@@ -660,10 +675,356 @@ section#contact_us #rights {
 
 /* ↓↓↓↓↓ LAPTOP ↓↓↓↓↓ */
 @media only screen and (min-width: 1280px) {
+    body {
+        height: 3974;
+    }
+    
+    
+    /* ↓↓↓↓↓ MARGIN PROPERTY ↓↓↓↓↓ */
+    .mt9 {
+        margin-top: 0px;
+    }
+
+    .mt13 {
+        margin-top: 24px;
+    }
+
+    .mt14 {
+        margin-top: 3.5px;
+    }
+
+    .mt15 {
+        margin-top: 21.3px;
+    }
+
+    .mt25 {
+        margin-top: 22.4px;
+    }
+
+    .mt39 {
+        margin-top: 39px;
+        margin-bottom: 92.5px;
+    }
+
+    .mt44 {
+        margin-top: 0px;
+    }
+
+    .mt54 {
+        margin-top: 0px;
+    }
+
+    .mt60 {
+        margin-top: 0px;
+    }
+
+    .mt80 {
+        margin-top: 71px;
+    }
+
+    .mb805 {
+        margin-bottom: 69.5px;
+    }
+    /* ↑↑↑↑↑ MARGIN PROPERTY ↑↑↑↑↑ */
+
+    /* Fonts */
+    h1 {
+        font-size: 79px;
+        line-height: 93px;
+        margin: 0px 0px 19.5px 0px;
+    }
+    
+    h3 {
+        font-size: 36px;
+        line-height: 42px;
+        margin: 0px;
+    }
+    
+    h4 {
+        font-size: 51px;
+        line-height: 60px;
+        margin: 0px;
+    }
+    
+    h6 {
+        font-size: 45px;
+        line-height: 53px;
+        margin: 0;    
+    }
+    
+    .t2-23 {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    
+    .t4-19 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    .t4-22 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    
+    .t6 {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    
+    
     header {
         top: 24px;
     }
 
 
+    /* ↓↓↓↓↓ SECTION HERO ↓↓↓↓↓ */
+    section#hero {
+        width: 100%;
+        height: 853px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("images/background.png");
+        background-origin: content-box;
+        background-position: top;
+        flex-wrap: nowrap;
+        z-index: 0;
+    }
+
+    section#hero .text {
+        width: 100%;
+        padding: 580.5px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Elevator button */
+    section#hero img {
+        position: relative;
+        top: -15px;
+    }
+    /* ↑↑↑↑↑ SECTION HERO ↑↑↑↑↑ */
+
+
+    /* ↓↓↓↓↓ SECTION SERVICES ↓↓↓↓↓ */
+    section#services {
+        height: 632px;
+        flex-wrap: nowrap;
+    }
+
+    section#services p#t4 {
+        margin-bottom: 0px;
+    }
+
+    section#services div.images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly
+    }
+
+    section#services h5 {
+        margin-top: 41px;
+    }
+    /* ↑↑↑↑↑ SECTION SERVICES ↑↑↑↑↑ */
+
+
+    /* ↓↓↓↓↓ SECTION PRODUCT DESCRIPTION ↓↓↓↓↓ */
+    section#product_description {
+        height: 507.5px;
+        padding: 0px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    section#product_description .p {
+        width: 40.7%;
+        margin-left: 0;
+    }
+
+    section#product_description p#2022, p.t4 {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    section#product_description div.image {
+        width: 42.7%;
+        margin-right: 5.35%;
+    }
+    /* ↑↑↑↑↑ SECTION PRODUCT DESCRIPTION ↑↑↑↑↑ */
+
+
+    /* ↓↓↓↓↓ SECTION PRODUCT LINE ↓↓↓↓↓ */
+    section#product_line {
+        height: 758px;
+    }
+    
+    section#product_line #t4 {
+        margin: 60.5px 0px 3.5px 0px;
+    }
+
+    section#product_line .separator {
+        margin: 21.3px 0px 57.3px 0px;
+    }
+
+    section#product_line #product_cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        /* padding-left: 2.1%; */
+    }
+    
+    section#product_line .product_card {
+        width: 17.7%;
+        /* padding-bottom: 32px; */
+        padding: 0% 1% 32px 1%;
+    }
+    
+    section#product_line #image {
+        width: 100%;
+
+    }
+    /* ↑↑↑↑↑ SECTION PRODUCT LINE ↑↑↑↑↑ */
+
+
+    /* ↓↓↓↓↓ SECTION DOWNLOAD BUTTON ↓↓↓↓↓ */
+    section#download_button {
+        background: none;
+        position: absolute;
+        top: 2603px;
+    }
+    /* ↑↑↑↑↑ SECTION DOWNLOAD BUTTON ↑↑↑↑↑ */
+
+
+    /* ↓↓↓↓↓ SECTION SERVICE REQUEST ↓↓↓↓↓ */
+    section#service_request {
+        height: 807px;
+        flex-wrap: nowrap;
+    }
+    
+    section#service_request .text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    section#service_request p {
+        margin-top: 92.5px;
+    }
+    
+    section#service_request h6 {
+        margin: 3.5px 0px 21.3px 0px;
+        width: 50%;
+        display: flex;
+    }
+    
+    section#service_request div#form {
+        width: 442.5px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    section#service_request form {
+        width: 100%;
+    }
+    
+    section#service_request fieldset {
+        /* width: 35%; */
+        display: table;
+    }
+    
+    section#service_request .field {
+        width: 100%;
+        display: flex;
+    }
+
+    section#service_request .double{
+    display: flex;
+    align-items: flex-start;
+    }
+   
+    .error {       
+        color: red;
+        font-size: 15px !important;
+        position: relative;
+        top: 5px;
+        right: -25px;
+        font-weight: 700;
+        font-family: 'Roboto';
+        font-style: normal;
+    }
+       
+    #successMessage {
+        color: green;
+        font-size: 15px !important;
+        display:none;
+        position: relative;
+        top: -20px;
+        left: 40px; 
+    }
+    
+    #errorMessage {
+        color: red;
+        font-size: 15px !important;
+        display:none;
+        position: relative;
+        top: -20px;
+        left: 40px; 
+    }
+    /* ↑↑↑↑↑ SECTION SERVICE REQUEST ↑↑↑↑↑ */
+
+
+    /* ↓↓↓↓↓ FOOTER ↓↓↓↓↓ */
+    footer {
+        height: 508.5px;
+    }
+
+    footer div#footer {
+        height: 225.8px;
+        justify-content: center;
+    }
+
+    footer img {
+        width: 20.69%;
+    }
+    /* ↑↑↑↑↑ FOOTER ↑↑↑↑↑ */
+
+
+    /* ↓↓↓↓↓ SECTION CONTACT US ↓↓↓↓↓ */
+    section#contact_us {
+        height: 282.6px;
+        padding-top: 63px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
+    section#contact_us #usa, .usa {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    section#contact_us #canada, .canada {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    /* ↑↑↑↑↑ SECTION CONTACT US ↑↑↑↑↑ */
+
+
+    /* ↓↓↓↓↓ SECTION RIGHTS ↓↓↓↓↓ */
+    section#rights {
+        height: 166px;
+        padding-top: 76.5px;
+        display: flex;
+    }
+    /* ↑↑↑↑↑ SECTION RIGHTS ↑↑↑↑↑ */
 }
 /* ↑↑↑↑↑ LAPTOP ↑↑↑↑↑ */
