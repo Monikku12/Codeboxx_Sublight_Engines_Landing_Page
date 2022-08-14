@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    /* height: 6499; */
+    height: 6499;
     padding: 0px;
     margin: 0px;
     background-color: violet;
@@ -358,7 +358,7 @@ nav .menu {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 nav .menu span {
@@ -407,7 +407,7 @@ section#hero {
 
 section#hero .text {
     width: 100%;
-    padding: 329px 19px 0px 19px;
+    padding: 329px 0px 0px 0px;
     display: flex;
     flex-direction: column;
 }
@@ -507,7 +507,7 @@ section#service_request p {
 }
 
 section#service_request h6 {
-    margin: 14px 24px 0px 26px;
+    margin: 14px 0px 0px 26px;
 }
 
 section#service_request div#form {
@@ -603,8 +603,9 @@ footer img {
 /* ↓↓↓↓↓ SECTION CONTACT US ↓↓↓↓↓ */
 section#contact_us {
     background: #FFFFFF;
-    height: 548px;
+    height: 361px;
     padding-top: 63px;
+    flex-wrap: nowrap;
 }
 
 section#contact_us .country {
@@ -621,7 +622,17 @@ section#contact_us #rights {
 /* ↑↑↑↑↑ SECTION CONTACT US ↑↑↑↑↑ */
 
 
-/* ↓↓↓↓↓ TABLET ↓↓↓↓↓ */
+/* ↓↓↓↓↓ SECTION RIGHTS ↓↓↓↓↓ */
+section#rights {
+    background: #FFFFFF;
+    height: 187px;
+    padding-top: 95px;
+    display: flex;
+    
+}
+
+
+/* ↓↓↓↓↓ MENU SMARTPHONE ↓↓↓↓↓ */
 @media only screen and (max-width: 910px) {
     nav .menu {
       display: flex;
@@ -685,6 +696,10 @@ section#contact_us #rights {
 
     .mt25 {
         margin-top: 22.4px;
+    }
+
+    .mt44 {
+        margin-top: 0px;
     }
 
     .mt54 {
@@ -817,7 +832,7 @@ section#contact_us #rights {
     }
     section#product_description .p {
         width: 40.7%;
-        margin-left: 5.2%;
+        margin-left: 0;
     }
 
     section#product_description p#2022, p.t4 {
@@ -850,7 +865,7 @@ section#contact_us #rights {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        padding-left: 2.1%;
+        /* padding-left: 2.1%; */
     }
     
     section#product_line .product_card {
@@ -900,28 +915,28 @@ section#contact_us #rights {
     }
     
     section#service_request div#form {
-        width: 35%;
+        width: 442.5px;
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-evenly;
         align-items: center;
     }
+
+    section#service_request form {
+        width: 100%;
+    }
     
     section#service_request fieldset {
+        /* width: 35%; */
         display: table;
     }
     
     section#service_request .field {
         width: 100%;
-        display: table-row;
+        display: flex;
+        
     }
-    
-    
-    
-    
-     
-    
-    
+   
     .error {       
         color: red;
         font-size: 15px !important;
@@ -973,6 +988,8 @@ section#contact_us #rights {
     section#contact_us {
         height: 282.6px;
         padding-top: 63px;
+        flex-direction: row;
+        justify-content: space-around;
         align-content: space-around;
     }
 
@@ -987,12 +1004,15 @@ section#contact_us #rights {
         flex-direction: column;
         align-items: flex-end;
     }
-
-    
-
     /* ↑↑↑↑↑ SECTION CONTACT US ↑↑↑↑↑ */
 
 
-
+    /* ↓↓↓↓↓ SECTION RIGHTS ↓↓↓↓↓ */
+    section#rights {
+        height: 166px;
+        padding-top: 76.5px;
+        display: flex;
+    }
+    /* ↑↑↑↑↑ SECTION RIGHTS ↑↑↑↑↑ */
 }
 /* ↑↑↑↑↑ LAPTOP ↑↑↑↑↑ */
