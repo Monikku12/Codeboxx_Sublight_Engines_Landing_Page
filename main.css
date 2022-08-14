@@ -637,6 +637,7 @@ section#rights {
     nav .menu {
       display: flex;
     }
+
     nav ul {
         --height: 0px;
         flex-direction: column;
@@ -648,6 +649,7 @@ section#rights {
         height: var(--height);
         transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
     }
+
     nav ul.active {
         --height: calc(
           (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childrenNumber)
@@ -659,6 +661,7 @@ section#rights {
       width: 100%;
       text-align: center;
     }
+
     nav ul li a {
       width: 100%;
     }
@@ -771,7 +774,6 @@ section#rights {
         font-size: 10px;
         line-height: 12px;
     }
-    
     
     header {
         top: 24px;
@@ -935,7 +937,6 @@ section#rights {
     }
     
     section#service_request fieldset {
-        /* width: 35%; */
         display: table;
     }
     
