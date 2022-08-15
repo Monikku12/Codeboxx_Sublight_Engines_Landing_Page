@@ -11,7 +11,7 @@ menu.addEventListener("click", () => {
 // ↑↑↑↑↑ HAMBURGER MENU ↑↑↑↑↑
 
 
-// ↓↓↓↓↓ CONTACT US FORM EMAIL ↓↓↓↓↓
+// ↓↓↓↓↓ CONTACT US ALERTS ↓↓↓↓↓
 $(function() {
     function validateEmail(email) {
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -85,15 +85,4 @@ $(function() {
     }
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-// ↑↑↑↑↑ CONTACT US FORM EMAIL ↑↑↑↑↑
+// ↑↑↑↑↑ CONTACT US ALERTS ↑↑↑↑↑

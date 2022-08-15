@@ -3,7 +3,7 @@ body {
     height: 6499px;
     padding: 0px;
     margin: 0px;
-    background-color: violet;
+    background-color: #FFFFFF;
 }
 
 main {
@@ -951,37 +951,6 @@ section#rights {
     display: flex;
     align-items: flex-start;
     }
-   
-    /* .error {       
-        color: red;
-        font-size: 15px !important;
-        position: relative;
-        top: 5px;
-        right: -25px;
-        font-weight: 700;
-        font-family: 'Roboto';
-        font-style: normal;
-        z-index: 2;
-    }
-       
-    #successMessage {
-        color: green;
-        font-size: 15px !important;
-        position: relative;
-        top: -20px;
-        left: 40px;
-        z-index: 2;
-    }
-    
-    #errorMessage {
-        color: red;
-        font-size: 15px !important;
-        position: relative;
-        top: -40px;
-        left: 40px; 
-        font-weight: 700;
-        z-index: 2
-    } */
     /* ↑↑↑↑↑ SECTION SERVICE REQUEST ↑↑↑↑↑ */
 
 
