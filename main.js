@@ -20,8 +20,6 @@ $(function() {
 
   $("#submit").click (function() {
 
-    console.log('form submit');
-
     var nameMissing = "";
     var emailMissing = "";
     var emailErrorMessage = "";
@@ -29,12 +27,12 @@ $(function() {
   
     // Checking email validation
     if ($("#email").val() == "") {
-      emailMissing = "Email address is empty!";
+      emailMissing = "Enter your email address!";
       $("#emailMissing").html(emailMissing);
     }
   
     if (validateEmail($("#email").val()) == false) {
-      emailErrorMessage = "Please enter a valid email address.";
+      emailErrorMessage = "Enter a valid email address.";
         $("#emailError").html(emailErrorMessage);
     }
     
@@ -52,7 +50,7 @@ $(function() {
     
     // Name validation
     if ($("#full_name").val() == "") {
-      nameMissing = "Please enter your full name!";
+      nameMissing = "Enter your full name!";
       $("#nameMissing").html(nameMissing);
     }
 
@@ -65,26 +63,26 @@ $(function() {
 
     // Phone number validation
     if ($.isNumeric($("#phone").val()) == false) {
-      phoneErrorMessage = "Please enter a valid phone number."
+      phoneErrorMessage = "Enter a valid phone number."
       $("#phoneError").html(phoneErrorMessage);
     }
     
     // Display phone error message
-    if (phoneMissing != "") {
+    if (phoneErrorMessage != "") {
       $("#phoneError").show();
     } else {
       $("#phoneError").hide();
     }
 
     // Display success message if there is no error
-    if (emailErrorMessage == "" && phoneErrorMessage == "") {
+    if (emailErrorMessage == "" && phoneErrorMessage == "" && nameMissing == "" && emailMissing == "") {
+      console.log("coucou!");
       $("#successMessage").show();
       $("#errorMessage").hide();
     } else {
       $("#successMessage").hide();
       $("#errorMessage").show();
     }
-
   });
 });
 

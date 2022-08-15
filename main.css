@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    height: 6499;
+    height: 6499px;
     padding: 0px;
     margin: 0px;
     background-color: violet;
@@ -499,7 +499,7 @@ section#download_button p {
 /* ↓↓↓↓↓ SECTION SERVICE REQUEST ↓↓↓↓↓ */
 section#service_request {
     background: #FFFFFF;
-    height: 735px;
+    height: 755px;
 }
 
 section#service_request p {
@@ -555,7 +555,7 @@ section#service_request #submit {
     font-size: 15px !important;
     position: relative;
     top: 5px;
-    right: -25px;
+    right: -20px;
     font-weight: 700;
     font-family: 'Roboto';
     font-style: normal;
@@ -564,19 +564,21 @@ section#service_request #submit {
 #successMessage {
     color: green;
     font-size: 15px !important;
+    font-weight: 700;
     display:none;
     position: relative;
     top: -20px;
-    left: 40px; 
+    left: center; 
 }
 
 #errorMessage {
     color: red;
     font-size: 15px !important;
-    display:none;
+    font-weight: 700;
+    display: none;
     position: relative;
     top: -20px;
-    left: 40px; 
+    /* left: center; */
   }
 /* ↑↑↑↑↑ SECTION SERVICE REQUEST ↑↑↑↑↑ */
 
@@ -637,6 +639,7 @@ section#rights {
     nav .menu {
       display: flex;
     }
+
     nav ul {
         --height: 0px;
         flex-direction: column;
@@ -648,6 +651,7 @@ section#rights {
         height: var(--height);
         transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
     }
+
     nav ul.active {
         --height: calc(
           (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childrenNumber)
@@ -659,6 +663,7 @@ section#rights {
       width: 100%;
       text-align: center;
     }
+
     nav ul li a {
       width: 100%;
     }
@@ -676,7 +681,7 @@ section#rights {
 /* ↓↓↓↓↓ LAPTOP ↓↓↓↓↓ */
 @media only screen and (min-width: 1280px) {
     body {
-        height: 3974;
+        height: 3974px;
     }
     
     
@@ -771,7 +776,6 @@ section#rights {
         font-size: 10px;
         line-height: 12px;
     }
-    
     
     header {
         top: 24px;
@@ -935,7 +939,6 @@ section#rights {
     }
     
     section#service_request fieldset {
-        /* width: 35%; */
         display: table;
     }
     
@@ -949,7 +952,7 @@ section#rights {
     align-items: flex-start;
     }
    
-    .error {       
+    /* .error {       
         color: red;
         font-size: 15px !important;
         position: relative;
@@ -958,25 +961,27 @@ section#rights {
         font-weight: 700;
         font-family: 'Roboto';
         font-style: normal;
+        z-index: 2;
     }
        
     #successMessage {
         color: green;
         font-size: 15px !important;
-        display:none;
         position: relative;
         top: -20px;
-        left: 40px; 
+        left: 40px;
+        z-index: 2;
     }
     
     #errorMessage {
         color: red;
         font-size: 15px !important;
-        display:none;
         position: relative;
-        top: -20px;
+        top: -40px;
         left: 40px; 
-    }
+        font-weight: 700;
+        z-index: 2
+    } */
     /* ↑↑↑↑↑ SECTION SERVICE REQUEST ↑↑↑↑↑ */
 
 
