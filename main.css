@@ -1,13 +1,15 @@
 body {
-    width: 100%;
-    height: 6499px;
+    width: 1440px;
+    /* width: 100%; */
+    height: 4471px;
     padding: 0px;
     margin: 0px;
-    background-color: #FFFFFF;
+    background-color: #07d8f8;
 }
 
 main {
-    width: 100%;
+    width: 1440px;
+    /* width: 100%; */
     padding: 0px;
     margin: 0px;
 }
@@ -59,8 +61,20 @@ section {
 
 
 /* ↓↓↓↓↓ MARGIN PROPERTY ↓↓↓↓↓ */
+.mb805 {
+    margin-bottom: 80.5px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
 .mt9 {
     margin-top: 9px;
+}
+
+.mt10 {
+    margin-top: 10px;
 }
 
 .mt13 {
@@ -105,10 +119,6 @@ section {
 
 .mt80 {
     margin-top: 80px;
-}
-
-.mb805 {
-    margin-bottom: 80.5px;
 }
 
 .mtb10 {
@@ -293,7 +303,8 @@ h6 {
 
 header {
     background: rgba(0, 0, 0, 0.69);
-    width: 100%;
+    /* width: 100%; */
+    width: 1440px;
     height: 93px;
     display: flex;
     justify-content: space-around;
@@ -405,7 +416,8 @@ nav .menu.active span:nth-child(2) {
 
 /* ↓↓↓↓↓ SECTION HERO ↓↓↓↓↓ */
 section#hero {
-    width: 100%;
+    width: 1440px;
+    /* width: 100%; */
     height: 554px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -417,7 +429,8 @@ section#hero {
 }
 
 section#hero .text {
-    width: 100%;
+    width: 1440px;
+    /* width: 100%; */
     padding: 329px 0px 0px 0px;
     display: flex;
     flex-direction: column;
@@ -458,7 +471,8 @@ section#product_description {
 }
 
 section#product_description img {
-    width: 100%;
+    width: 440px;
+    /* width: 100%; */
 }
 /* ↑↑↑↑↑ SECTION PRODUCT DESCRIPTION ↑↑↑↑↑ */
 
@@ -491,7 +505,8 @@ section#product_line .legend {
 /* ↓↓↓↓↓ SECTION DOWNLOAD BUTTON ↓↓↓↓↓ */
 section#download_button {
     background: rgba(0, 0, 0, 0.69);
-    width: 100%;
+    width: 1440px;
+    /* width: 100%; */
     height: 106px;
     display: flex;
     align-items: center;
@@ -644,8 +659,8 @@ section#rights {
     
 }
 
-
-/* ↓↓↓↓↓ MENU SMARTPHONE ↓↓↓↓↓ */
+/* 
+/*↓↓↓↓↓ MENU SMARTPHONE ↓↓↓↓↓ */
 @media only screen and (max-width: 910px) {
     nav .menu {
         display: flex;
@@ -1013,3 +1028,4 @@ section#rights {
     /* ↑↑↑↑↑ SECTION RIGHTS ↑↑↑↑↑ */
 }
 /* ↑↑↑↑↑ LAPTOP ↑↑↑↑↑ */
+*/
