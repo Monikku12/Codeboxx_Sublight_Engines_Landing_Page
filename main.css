@@ -315,6 +315,10 @@ main {
     margin-top: 92px;
 }
 
+.mt104 {
+    margin-top: 104px;
+}
+
 .mt129 {
     margin-top: 129px;
 }
@@ -331,15 +335,6 @@ main {
 /*////////////////////////////////////*/
 /*/// IMAGES & GRAPHICS PROPERTIES ///*/
 /*////////////////////////////////////*/
-
-.image {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    padding: 0px;
-}
 
 .separator {
     width: 170px;
@@ -599,12 +594,12 @@ main {
 }
 
 /* Charcoal */
-.cch {
+.cc {
     color: #292929;
 }
 
 /* Orange */
-.cor {
+.co {
     color: #FF7630;
 }
 
@@ -808,12 +803,6 @@ section#product_line .legend {
 section#product_line .legend_text {
     width: 223.43px;
 }
-/* ↑↑↑↑↑ SECTION PRODUCT LINE ↑↑↑↑↑ */
-
-
-/* ↓↓↓↓↓ SECTION DOWNLOAD BUTTON ↓↓↓↓↓ */
-/* #download_button { */
-/* } */
 
 #download_button p {
     width: 294px;
@@ -821,21 +810,18 @@ section#product_line .legend_text {
     border: 3px solid #FFFFFF;
     padding: 14px 33px 14px 33px;
 }
-/* ↑↑↑↑↑ SECTION DOWNLOAD BUTTON ↑↑↑↑↑ */
+/* ↑↑↑↑↑ SECTION PRODUCT LINE ↑↑↑↑↑ */
+
 
 
 /* ↓↓↓↓↓ SECTION SERVICE REQUEST ↓↓↓↓↓ */
 section#service_request {
     background: #FFFFFF;
-    height: 755px;
+    height: 804px;
 }
 
-section#service_request p {
-    margin-top: 44px;
-}
-
-section#service_request h6 {
-    margin: 14px 0px 0px 26px;
+section#service_request .text {
+    width: 568px;
 }
 
 section#service_request div#form {
