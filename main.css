@@ -196,8 +196,13 @@ main {
 .ml20 {
     margin-left: 20px;
 }
+
 .ml30 {
     margin-left: 30px;
+}
+
+.ml41 {
+    margin-left: 41px;
 }
 
 .ml71 {
@@ -215,6 +220,10 @@ main {
 /* ↓↓↓↓↓ RIGHT MARGINS ↓↓↓↓↓ */
 .mr30 {
     margin-right: 30px;
+}
+
+.mr41 {
+    margin-right: 41px;
 }
 
 .mr77 {
@@ -282,6 +291,10 @@ main {
     margin-top: 60px;
 }
 
+.mt64 {
+    margin-top: 64.5px;
+}
+
 .mt65 {
     margin-top: 65.25px;
 }
@@ -296,6 +309,10 @@ main {
 
 .mt80 {
     margin-top: 80px;
+}
+
+.mt92 {
+    margin-top: 92px;
 }
 
 .mt129 {
@@ -531,7 +548,7 @@ main {
 }
 
 .lh23 {
-    line-height: 23px;
+    line-height: 23.44px;
 }    
 
 .lh26 {
@@ -778,40 +795,31 @@ section#product_line .text {
     width: 659px;
 }
 
-section#product_line .product_card{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-bottom: 32px;
+section#product_line #product_cards #image{
+    height: 170.62px;
     width: 255px;
 }
 
 section#product_line .legend {
-    /* width: 255px; */
+    height: 103px;
     background-color: #FFFFFF;
+}
+
+section#product_line .legend_text {
+    width: 223.43px;
 }
 /* ↑↑↑↑↑ SECTION PRODUCT LINE ↑↑↑↑↑ */
 
 
 /* ↓↓↓↓↓ SECTION DOWNLOAD BUTTON ↓↓↓↓↓ */
-section#download_button {
-    background: rgba(0, 0, 0, 0.69);
-    width: 1440px;
-    /* width: 100%; */
-    height: 106px;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    z-index: 999;
-}
+/* #download_button { */
+/* } */
 
-section#download_button p {
+#download_button p {
+    width: 294px;
+    height: 50px;
     border: 3px solid #FFFFFF;
-    padding: 11px 33px 11px 33px;
+    padding: 14px 33px 14px 33px;
 }
 /* ↑↑↑↑↑ SECTION DOWNLOAD BUTTON ↑↑↑↑↑ */
 
