@@ -6,21 +6,50 @@ Author URI: https://monichan.com/
 Tags: Website
 */
 
-body {
-    width: 1440px;
-    /* width: 100%; */
-    height: 4471px;
-    padding: 0px;
-    margin: 0px;
-    background-color: #ff02f2;
-}
+/* ////////////////////// */
+/* ///TABLE OF CONTENTS// */
+/* ////////////////////// */
 
-main {
-    width: 1440px;
-    /* width: 100%; */
-    padding: 0px;
-    margin: 0px;
-}
+/* 
+GENERAL PROPERTIES
+    ・ DISPLAY PROPERTIES
+        ・ POSITION PROPERTIES..................
+        ・ FLEX PROPERTIES......................
+            ・ FLEX-DIRECTION...................
+            ・ FLEX-WRAP........................
+            ・ JUSTIFY-CONTENT..................
+            ・ ALIGN-ITEMS......................
+            ・ ALIGN-CONTENT....................
+    ・ MARGINS PROPERTIES
+        ・ BOTTOM MARGINS.......................
+        ・ LEFT MARGINS.........................
+        ・ RIGHT MARGINS........................
+        ・ TOP MARGINS..........................
+    ・ IMAGES & GRAPHICS PROPERTIES
+        ・ SEPARATOR............................
+    ・ TEXTS & FONTS PROPERTIES
+        ・ ROBOTO FONTS.........................
+        ・ FONTS WEIGHT.........................
+        ・ FONTS CASE (TEXT-TRANSFORM)..........
+        ・ TEXT DECORATIONS.....................
+        ・ TEXT ALIGNEMENT......................
+        ・ FONT SIZES...........................
+        ・ LINE HEIGHTS.........................
+    ・ COLORS PROPERTIES
+        ・ COLORS...............................
+        ・ BACKGROUND COLORS....................
+BODY PROPERTIES
+    ・ BODY & MAIN..............................
+    ・ NAVBAR & MENU............................
+    ・ SECTION..................................
+        ・ HERO.................................
+        ・ SERVICES.............................
+        ・ PRODUCT DESCRIPTION..................
+        ・ PRODUCT LINE.........................
+        ・ SERVICE REQUEST......................
+        ・ SINCE................................
+    ・ FOOTER...................................
+ */
 
 
 /*//////////////////////////*/
@@ -69,7 +98,7 @@ main {
     display: flex;
 }
 
-/* Flex-direction */
+/* FLEX-DIRECTION */
 .fdc {
     flex-direction: column;
 }
@@ -86,7 +115,7 @@ main {
     flex-direction: row-reverse;
 }
 
-/* Flex-wrap */
+/* FLEX-WRAP */
 .fww {
     flex-wrap: wrap;
 }
@@ -99,7 +128,7 @@ main {
     flex-wrap: nowrap;
 }
 
-/* Justify-content */
+/* JUSTIFY-CONTENT */
 .jcfs {
     justify-content: flex-start;
 }
@@ -124,7 +153,7 @@ main {
     justify-content:space-evenly;
 }
 
-/* Align-items */
+/* ALIGN-ITEMS */
 .aifs {
     align-items: flex-start
 }
@@ -145,7 +174,7 @@ main {
     align-items: baseline
 }
 
-/* Align-content */
+/* ALIGN-CONTENT */
 .acfs {
     align-content: flex-start
 }
@@ -193,24 +222,16 @@ main {
 }
 
 /* ↓↓↓↓↓ LEFT MARGINS ↓↓↓↓↓ */
+.ml2 {
+    margin-left: 2px;
+}
+
 .ml20 {
     margin-left: 20px;
 }
 
-.ml30 {
-    margin-left: 30px;
-}
-
-.ml41 {
-    margin-left: 41px;
-}
-
-.ml71 {
-    margin-left: 71px;
-}
-
-.ml390 {
-    margin-left: 390px;
+.ml48 {
+    margin-left: 48px;
 }
 
 .ml720 {
@@ -283,6 +304,10 @@ main {
     margin-top: 46px;
 }
 
+.mt47 {
+    margin-top: 47px;
+}
+
 .mt52 {
     margin-top: 52.5px;
 }
@@ -315,8 +340,16 @@ main {
     margin-top: 80px;
 }
 
+.mt86 {
+    margin-top: 86px;
+}
+
 .mt92 {
     margin-top: 92px;
+}
+
+.mt100 {
+    margin-top: 100px;
 }
 
 .mt104 {
@@ -326,14 +359,6 @@ main {
 .mt129 {
     margin-top: 129px;
 }
-
-/* .mtb10 {
-    margin: 10px 0px 10px 0px;
-}
-
-.mtb25-435 {
-    margin: 25px 0px 43.5px 0px;
-} */
 
 
 /*////////////////////////////////////*/
@@ -444,7 +469,7 @@ main {
     font-weight: 900;
 }
 
-/* ↓↓↓↓↓ FONTS CASE ↓↓↓↓↓ */
+/* ↓↓↓↓↓ FONTS CASE (TEXT-TRANSFORM) ↓↓↓↓↓ */
 .ttu {
     text-transform: uppercase;
 }
@@ -538,6 +563,10 @@ main {
     line-height: 11.72px;
 }
 
+.lh17 {
+    line-height: 17.58px;
+}
+
 .lh18 {
     line-height: 18px;
 }
@@ -553,6 +582,10 @@ main {
 .lh23 {
     line-height: 23.44px;
 }    
+
+.lh25 {
+    line-height: 25.78px;    
+}
 
 .lh26 {
     line-height: 26px;    
@@ -591,6 +624,7 @@ main {
 /*/// COLORS PROPERTIES ///*/
 /*/////////////////////////*/
 
+/* ↓↓↓↓↓ COLORS ↓↓↓↓↓ */
 /* Black */
 .cb {
     color: #000000;
@@ -632,16 +666,49 @@ main {
 }
 
 
-/* ↓↓↓↓↓ BACKGROUND COLOR ↓↓↓↓↓ */
-/* Dark Charcoal */
-.bcdc {
+/* ↓↓↓↓↓ BACKGROUND COLORS ↓↓↓↓↓ */
+/* Black */
+.bcb {
     background-color: #000000b0;
 }
+
+/* Charcoal */
+.bcc {
+    background-color: #292929;
+}
+
+/* Orange */
+.bco {
+    background-color: #FF7630;
+}
+
+/* White */
+.bcw {
+    background-color: #FFFFFF;
+}
+
 
 
 /*///////////////////////*/
 /*/// BODY PROPERTIES ///*/
 /*///////////////////////*/
+
+/* ↓↓↓↓↓ BODY & MAIN ↓↓↓↓↓ */
+body {
+    width: 1440px;
+    height: 4471px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #ff02f2;
+}
+
+main {
+    width: 1440px;
+    padding: 0px;
+    margin: 0px;
+}
+/* ↑↑↑↑↑ BODY & MAIN ↑↑↑↑↑ */
+
 
 /* ↓↓↓↓↓ NAVBAR & MENU ↓↓↓↓↓ */
 *,
@@ -659,7 +726,6 @@ main {
 
 header {
     width: 1440px;
-    padding: 0px;
     /* box-shadow: var(--nav-shadow); */
 }
 
@@ -765,7 +831,6 @@ section#hero {
 
 /* ↓↓↓↓↓ SECTION SERVICES ↓↓↓↓↓ */
 section#services {
-    background: #383838;
     height: 711px; 
 }
 
@@ -783,7 +848,6 @@ section#services img#webuild {
 
 /* ↓↓↓↓↓ SECTION PRODUCT DESCRIPTION ↓↓↓↓↓ */
 section#product_description {
-    background: #FFFFFF;
     height: 571px;
 }
 
@@ -793,14 +857,12 @@ section#product_description #text {
 
 section#product_description img {
     width: 615px;
-    /* width: 100%; */
 }
 /* ↑↑↑↑↑ SECTION PRODUCT DESCRIPTION ↑↑↑↑↑ */
 
 
 /* ↓↓↓↓↓ SECTION PRODUCT LINE ↓↓↓↓↓ */
 section#product_line {
-    background: #FF7630;
     height: 853px;
 }
 
@@ -815,7 +877,6 @@ section#product_line #product_cards #image{
 
 section#product_line .legend {
     height: 103px;
-    background-color: #FFFFFF;
 }
 
 section#product_line .legend_text {
@@ -834,7 +895,6 @@ section#product_line .legend_text {
 
 /* ↓↓↓↓↓ SECTION SERVICE REQUEST ↓↓↓↓↓ */
 section#service_request {
-    background: #FFFFFF;
     height: 804px;
 }
 
@@ -842,8 +902,7 @@ section#service_request .text {
     width: 568px;
 }
 
-section#service_request div#form {
-    /* width: 87.18%; */
+section#service_request #form {
     width: 498px;
 }
 
@@ -851,39 +910,35 @@ section#service_request fieldset {
     border: none;
 }
 
-section#service_request .field {
-    display: flex;
-    flex-direction: column;
-}
-
 section#service_request input {
     height: 52px;
     margin-top: 6px;
     padding: 18px 23px 16px 23px;
     border: 1px solid #A0A0A0;
-    appearance: none;
-    width: 100%;
+    /* appearance: none; */
+    /* width: 100%; */
 }
 
 section#service_request select {
+    width: 236px;
     height: 52px;
     margin-top: 6px;
     padding: 18px 23px 16px 23px;
     border: 1px solid #A0A0A0;
-    appearance: none;
-    width: 100%;
+    /* appearance: none; */
+    /* width: 100%; */
 }
 
-section#service_request #submit {
+section#service_request button {
+    width: 498px;
     height: 50px;
-    margin: 39px 0px 0px 0px;
+    /* margin: 39px 0px 0px 0px; */
     padding: 14px 20px 14px 20px;
     border: 3px solid #292929;
-    width: 100%;
-    background-color: #FFFFFF;
+    /* width: 100%; */
 }
 
-.error {       
+/* .error {       
     color: red;
     font-size: 15px !important;
     position: relative;
@@ -892,7 +947,7 @@ section#service_request #submit {
     font-weight: 700;
     font-family: 'Roboto';
     font-style: normal;
-}
+} */
 
 #successMessage {
     display:none;
@@ -908,53 +963,19 @@ section#service_request #submit {
 }
 /* ↑↑↑↑↑ SECTION SERVICE REQUEST ↑↑↑↑↑ */
 
+/* ↓↓↓↓↓ SECTION SINCE ↓↓↓↓↓ */
+section#since {
+    height: 254px;
+}
+
+section#since img {
+    width: 298px;
+}
+/* ↑↑↑↑↑ SECTION SINCE ↑↑↑↑↑ */
 
 /* ↓↓↓↓↓ FOOTER ↓↓↓↓↓ */
 footer {
-    background: #FFFFFF;
-    height: 1059px;
+    height: 318px;
 }
 
-footer div#footer {
-    background: #292929;
-    height: 405px;
-    padding: 0px 26px 0px 26px;
-}
-
-footer img {
-    width: 76.41%;
-    margin: 39px;
-}
 /* ↑↑↑↑↑ FOOTER ↑↑↑↑↑ */
-
-
-/* ↓↓↓↓↓ SECTION CONTACT US ↓↓↓↓↓ */
-section#contact_us {
-    background: #FFFFFF;
-    height: 361px;
-    padding-top: 63px;
-    flex-wrap: nowrap;
-}
-
-section#contact_us .country {
-    padding-top: 7px;
-}
-
-section#contact_us .address p{
-    margin: 0px;
-}
-
-section#contact_us #rights {
-    padding-top: 95px;
-}
-/* ↑↑↑↑↑ SECTION CONTACT US ↑↑↑↑↑ */
-
-
-/* ↓↓↓↓↓ SECTION RIGHTS ↓↓↓↓↓ */
-section#rights {
-    background: #FFFFFF;
-    height: 187px;
-    padding-top: 95px;
-    display: flex;
-    
-}
