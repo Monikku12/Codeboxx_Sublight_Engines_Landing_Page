@@ -29,7 +29,6 @@ GENERAL PROPERTIES
         ・ SEPARATOR............................
     ・ TEXTS & FONTS PROPERTIES
         ・ ROBOTO FONTS.........................
-        ・ FONTS WEIGHT.........................
         ・ FONTS CASE (TEXT-TRANSFORM)..........
         ・ TEXT DECORATIONS.....................
         ・ TEXT ALIGNEMENT......................
@@ -213,14 +212,6 @@ BODY PROPERTIES
     margin-bottom: 68px;
 }
 
-.mb805 {
-    margin-bottom: 80.5px;
-}
-
-.mb90 {
-    margin-bottom: 90px;
-}
-
 /* ↓↓↓↓↓ LEFT MARGINS ↓↓↓↓↓ */
 .ml2 {
     margin-left: 2px;
@@ -239,18 +230,6 @@ BODY PROPERTIES
 }
 
 /* ↓↓↓↓↓ RIGHT MARGINS ↓↓↓↓↓ */
-.mr30 {
-    margin-right: 30px;
-}
-
-.mr41 {
-    margin-right: 41px;
-}
-
-.mr77 {
-    margin-right: 77px;
-}
-
 .mr152 {
     margin-right: 152px;
 }
@@ -258,18 +237,6 @@ BODY PROPERTIES
 /* ↓↓↓↓↓ TOP MARGINS ↓↓↓↓↓ */
 .mt0 {
     margin-top: 0px;
-}
-
-.mt9 {
-    margin-top: 9px;
-}
-
-.mt10 {
-    margin-top: 10px;
-}
-
-.mt13 {
-    margin-top: 13px;
 }
 
 .mt14 {
@@ -292,14 +259,6 @@ BODY PROPERTIES
     margin-top: 25.25px;
 }
 
-.mt39 {
-    margin-top: 39px;
-}
-
-.mt44 {
-    margin-top: 44px;
-}
-
 .mt46 {
     margin-top: 46px;
 }
@@ -310,14 +269,6 @@ BODY PROPERTIES
 
 .mt52 {
     margin-top: 52.5px;
-}
-
-.mt54 {
-    margin-top: 54px;
-}
-
-.mt60 {
-    margin-top: 60px;
 }
 
 .mt64 {
@@ -332,10 +283,6 @@ BODY PROPERTIES
     margin-top: 68px;
 }
 
-.mt70 {
-    margin-top: 70px;
-}
-
 .mt80 {
     margin-top: 80px;
 }
@@ -346,10 +293,6 @@ BODY PROPERTIES
 
 .mt92 {
     margin-top: 92px;
-}
-
-.mt100 {
-    margin-top: 100px;
 }
 
 .mt104 {
@@ -376,18 +319,6 @@ BODY PROPERTIES
 /*////////////////////////////////*/
 
 /* ↓↓↓↓↓ ROBOTO FONTS ↓↓↓↓↓ */
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
 .roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -412,74 +343,9 @@ BODY PROPERTIES
     font-style: normal;
 }
 
-.roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-}
-
-.roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-.roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-}
-
-/* ↓↓↓↓↓ FONTS WEIGHT ↓↓↓↓↓ */
-/* Normal */
-.fwn {
-    font-weight: 400;    
-}
-
-/* Bold */
-.fwb {
-    font-weight: 700;
-}
-
-/* Extra Bold */
-.fweb {
-    font-weight: 800;
-}
-
-/* Heavy */
-.fwh {
-    font-weight: 900;
-}
-
 /* ↓↓↓↓↓ FONTS CASE (TEXT-TRANSFORM) ↓↓↓↓↓ */
 .ttu {
     text-transform: uppercase;
-}
-
-.ttl {
-    text-transform: lowercase;
-}
-
-.ttC {
-    text-transform: capitalize;
 }
 
 /* ↓↓↓↓↓ TEXT DECORATIONS ↓↓↓↓↓ */
@@ -493,33 +359,13 @@ BODY PROPERTIES
     text-align: center;
 }
 
-.tal {
-    text-align: left;
-}
-
-.tar {
-    text-align: right;
-}
-
-.taj {
-    text-align: justify;
-}
-
 /* ↓↓↓↓↓ FONT SIZES ↓↓↓↓↓ */
 .fs10 {
     font-size: 10px;
 }
 
-.fs12 {
-    line-height: 12px;
-}
-
 .fs15 {
     font-size: 15px;
-}
-
-.fs16 {
-    font-size: 16px;
 }
 
 .fs18 {
@@ -536,10 +382,6 @@ BODY PROPERTIES
 
 .fs25 {
     font-size: 25px;
-}    
-
-.fs30 {
-    font-size: 30px;
 }    
 
 .fs36 {
@@ -567,14 +409,6 @@ BODY PROPERTIES
     line-height: 17.58px;
 }
 
-.lh18 {
-    line-height: 18px;
-}
-
-.lh19 {
-    line-height: 18.75px;
-}
-
 .lh22 {
     line-height: 22px;
 }
@@ -587,21 +421,9 @@ BODY PROPERTIES
     line-height: 25.78px;    
 }
 
-.lh26 {
-    line-height: 26px;    
-}
-
-.lh28 {
-    line-height: 28.5px;
-}
-
 .lh29 {
     line-height: 29.3px;
 }    
-
-.lh35 {
-    line-height: 35px;
-}        
 
 .lh42 {
     line-height: 42.19px;
@@ -633,11 +455,6 @@ BODY PROPERTIES
 /* Charcoal */
 .cc {
     color: #292929;
-}
-
-/* Dark Gray */
-.cdg {
-    color: #383838;
 }
 
 /* Green*/
