@@ -62,5 +62,6 @@
         "webuild",
         "wedesign",
         "wemaintain"
-    ]
+    ],
+    "indentRainbow.indicatorStyle": "classic"
 }

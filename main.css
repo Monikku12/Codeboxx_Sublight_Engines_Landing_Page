@@ -39,6 +39,7 @@ GENERAL PROPERTIES
         ・ BACKGROUND COLORS....................
 BODY PROPERTIES
     ・ BODY & MAIN..............................
+    ・ TITLES & TEXTS...........................
     ・ NAVBAR & MENU............................
     ・ SECTION..................................
         ・ HERO.................................
@@ -499,6 +500,11 @@ BODY PROPERTIES
     background-color: #FF7630;
 }
 
+/* Transparent */
+.bct {
+    background-color: transparent;
+}
+
 /* White */
 .bcw {
     background-color: #FFFFFF;
@@ -512,19 +518,65 @@ BODY PROPERTIES
 
 /* ↓↓↓↓↓ BODY & MAIN ↓↓↓↓↓ */
 body {
-    width: 1440px;
-    height: 4471px;
-    padding: 0px;
-    margin: 0px;
     background-color: #ff02f2;
+    height: 4471px;
+    margin: 0px;
+    padding: 0px;
+    width: 1440px;
 }
 
 main {
-    width: 1440px;
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
+    width: 1440px;
 }
 /* ↑↑↑↑↑ BODY & MAIN ↑↑↑↑↑ */
+
+
+/* ↓↓↓↓↓ TITLES & TEXTS ↓↓↓↓↓ */
+.address {
+    color: #292929;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+
+.button {
+    /* border: 3px; */
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 0px;
+    /* padding: 14px 20px 14px 20px; */
+    text-transform: uppercase;
+}
+
+.office {
+    color: #FF7630;
+    font-size: 15px;
+    line-height: 17px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+    text-transform: uppercase;
+
+}
+.small_prints {
+    color: #292929;
+    font-size: 10px;
+    line-height: 11.72px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 45px;
+    line-height: 52.73px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+/* ↑↑↑↑↑ TITLES & TEXTS ↑↑↑↑↑ */
 
 
 /* ↓↓↓↓↓ NAVBAR & MENU ↓↓↓↓↓ */
@@ -703,8 +755,8 @@ section#product_line .legend_text {
 #download_button p {
     width: 294px;
     height: 50px;
-    border: 3px solid #FFFFFF;
-    padding: 14px 33px 14px 33px;
+    border: solid #FFFFFF;
+    /* padding: 14px 33px 14px 33px; */
 }
 /* ↑↑↑↑↑ SECTION PRODUCT LINE ↑↑↑↑↑ */
 
@@ -746,13 +798,12 @@ section#service_request select {
     /* width: 100%; */
 }
 
-section#service_request button {
+section#service_request .submit {
     width: 498px;
     height: 50px;
-    /* margin: 39px 0px 0px 0px; */
-    padding: 14px 20px 14px 20px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
     border: 3px solid #292929;
-    /* width: 100%; */
 }
 
 /* .error {       
